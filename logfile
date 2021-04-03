@@ -1,0 +1,357 @@
+Apache Maven 3.6.0
+Maven home: /usr/share/maven
+Java version: 11.0.9.1, vendor: Debian, runtime: /usr/lib/jvm/java-11-openjdk-i386
+Default locale: fr_FR, platform encoding: UTF-8
+OS name: "linux", version: "4.19.0-10-686-pae", arch: "i386", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading global settings from /usr/share/maven/conf/settings.xml
+[DEBUG] Reading user settings from /root/.m2/settings.xml
+[DEBUG] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /root/.m2/toolchains.xml
+[DEBUG] Using local repository at /root/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /root/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.mycompany.app:JMusicHub:jar:1.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.mycompany.app:JMusicHub:jar:1.0.0-SNAPSHOT
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] --------------------< com.mycompany.app:JMusicHub >---------------------
+[INFO] Building JMusicHubt 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.mycompany.app:JMusicHub:1.0.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1178071, ConflictMarker.markTime=202721, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=589138, ConflictIdSorter.topsortTime=438698, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3750504, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=43371834, DefaultDependencyCollector.transformTime=9920831}
+[DEBUG] com.mycompany.app:JMusicHub:jar:1.0.0-SNAPSHOT
+[DEBUG]    junit:junit:jar:4.12:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JMusicHub ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=789174, ConflictMarker.markTime=376132, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=486998, ConflictIdSorter.topsortTime=56440, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9285658, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=480781944, DefaultDependencyCollector.transformTime=11134122}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@bcc55f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.mycompany.app:JMusicHub:1.0.0-SNAPSHOT @ /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1b000f7
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.TERM=xterm, java.specification.version=11, sun.cpu.isalist=, sun.arch.data.model=32, java.vendor.url=https://tracker.debian.org/openjdk-11, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-i386/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -f pom.xml compile -X --log-file logfile, jdk.debug=release, maven.version=3.6.0, java.specification.vendor=Oracle Corporation, java.version.date=2020-11-04, java.home=/usr/lib/jvm/java-11-openjdk-i386, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.MANPATH=:/root/.opam/system/man, sun.management.compiler=HotSpot Tiered Compilers, java.runtime.version=11.0.9.1+1-post-Debian-1deb10u2, env.PATH=/root/.opam/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:, file.encoding=UTF-8, env._=/usr/bin/mvn, env.SHLVL=1, java.io.tmpdir=/tmp, java.version=11.0.9.1, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, java.library.path=/usr/java/packages/lib:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Debian, classworlds.conf=/usr/share/maven/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.LANG=fr_FR.UTF-8, env.SSH_CLIENT=192.20.55.1 64817 22, env.MAKELEVEL=, env.XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop, user.timezone=, os.name=Linux, java.vm.specification.version=11, env.DISPLAY=localhost:10.0, maven.compiler.source=1.8, user.home=/root, env.SSH_CONNECTION=192.20.55.1 64817 192.20.55.210 22, start-class=comp.mycompany.com.JMusicHub.main, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, env.DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus, path.separator=:, os.version=4.19.0-10-686-pae, env.MAIL=/var/mail/root, java.vm.name=OpenJDK Server VM, env.SHELL=/bin/bash, os.arch=i386, maven.multiModuleProjectDirectory=/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub, env.MAVEN_PROJECTBASEDIR=/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub, java.vm.info=mixed mode, sharing, env.OCAML_TOPLEVEL_PATH=/root/.opam/system/lib/toplevel, env.USER=root, java.class.version=55.0, awt.toolkit=sun.awt.X11.XToolkit, sun.jnu.encoding=UTF-8, maven.build.version=Apache Maven 3.6.0, maven.home=/usr/share/maven, file.separator=/, line.separator=
+, env.SSH_TTY=/dev/pts/2, env.PERL5LIB=/root/.opam/system/lib/perl5:, user.name=root, env.LOGNAME=root, env.XDG_RUNTIME_DIR=/run/user/0, sun.os.patch.level=unknown, maven.compiler.target=1.8, env.XDG_SESSION_TYPE=tty, library.jansi.path=/usr/share/maven/lib/jansi-native, env.XDG_SESSION_CLASS=user, env.OLDPWD=/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub, env.PWD=/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, env.HOME=/root, java.vm.vendor=Debian, env.CAML_LD_LIBRARY_PATH=/root/.opam/system/lib/stublibs:/usr/lib/ocaml/stublibs, maven.conf=/usr/share/maven/conf, sun.java.launcher=SUN_STANDARD, user.country=FR, sun.cpu.endian=little, user.language=fr, env.LS_OPTIONS=--color=auto, java.runtime.name=OpenJDK Runtime Environment, env.XDG_SESSION_ID=110622, env.MAVEN_CMD_LINE_ARGS= -f pom.xml compile -X --log-file logfile, java.vendor.url.bug=https://bugs.debian.org/openjdk-11, project.build.sourceencoding=UTF-8, user.dir=/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub, env.MAKEFLAGS=, java.vm.version=11.0.9.1+1-post-Debian-1deb10u2}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ JMusicHub ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3972190, ConflictMarker.markTime=460848, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=2231756, ConflictIdSorter.topsortTime=98496, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4920140, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=771683225, DefaultDependencyCollector.transformTime=11718465}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@bcc55f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub
+[DEBUG]   (f) buildDirectory = /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target
+[DEBUG]   (f) classpathElements = [/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes]
+[DEBUG]   (f) compileSourceRoots = [/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes
+[DEBUG]   (f) projectArtifact = com.mycompany.app:JMusicHub:jar:1.0.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@1b000f7
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1b000f7
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java]
+[DEBUG] Classpath: [/media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes]
+[DEBUG] Output directory: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/AlbumVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Langues.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/util/WriteLivreAudioVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/util/WritePlaylistVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/util/WriteVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/util/WriteAlbumVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/util/WriteChansonVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/main.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Genre.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Album.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/LivreAudio.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Listing.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Chanson.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/PlaylistVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/ChansonVolatile.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Playlist.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Stockage.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/Categorie.java
+[DEBUG] Stale source detected: /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java/business/LivreAudioVolatile.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes
+[DEBUG] Source roots:
+[DEBUG]  /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java
+[DEBUG] Command line options:
+[DEBUG] -d /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes -classpath /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes: -sourcepath /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/src/main/java: -s /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/generated-sources/annotations -g -nowarn -target 1.8 -source 1.8
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 19 source files to /media/maison/samba/partage/Florian Ecole/ESIEA/3A/GLPOO/JMusicHub/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.336 s
+[INFO] Finished at: 2021-03-28T21:44:47+02:00
+[INFO] ------------------------------------------------------------------------
