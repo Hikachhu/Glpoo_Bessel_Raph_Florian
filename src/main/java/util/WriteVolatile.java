@@ -1,4 +1,5 @@
 package comp.mycompany.com.JMusicHub.util;
+import org.apache.log4j.Logger;
 import comp.mycompany.com.JMusicHub.util.*;
 import comp.mycompany.com.JMusicHub.business.*;
 
@@ -18,6 +19,7 @@ import org.w3c.dom.*;
 import java.io.IOException;
 import java.io.File;
 import java.util.UUID;
+import org.apache.log4j.Logger;
 
 
 public class WriteVolatile{

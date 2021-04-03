@@ -1,0 +1,10 @@
+2021-04-03 19:21:28 INFO  main:15 - Debut du programme
+2021-04-03 19:21:33 INFO  PlaySound:65 - Ouverture du fichier Data/paradoxal.wav
+2021-04-03 19:21:33 INFO  PlaySound:73 - Ouverture audioStream de Data\paradoxal.wav
+2021-04-03 19:21:33 INFO  PlaySound:117 - Debut musique
+2021-04-03 19:21:35 INFO  PlaySound:145 - Acceleration de 30secs de la musique
+2021-04-03 19:21:38 INFO  PlaySound:145 - Acceleration de 30secs de la musique
+2021-04-03 19:21:40 INFO  PlaySound:145 - Acceleration de 30secs de la musique
+2021-04-03 19:21:42 INFO  PlaySound:145 - Acceleration de 30secs de la musique
+2021-04-03 19:21:43 INFO  PlaySound:153 - Recule de 30secs de la musique/non realisé
+2021-04-03 19:22:01 INFO  PlaySound:125 - Mise en pause musique

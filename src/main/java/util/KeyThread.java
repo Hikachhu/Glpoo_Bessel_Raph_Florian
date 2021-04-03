@@ -12,9 +12,11 @@ import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.awt.Robot;
+import org.apache.log4j.Logger;
 
 
 class KeyThread implements Runnable {
+  final static Logger logger = Logger.getLogger(KeyThread.class);
    private Thread t;
    MutableInt ReadBytes;
 

@@ -1,4 +1,5 @@
 package comp.mycompany.com.JMusicHub.business;
+import org.apache.log4j.Logger;
 import comp.mycompany.com.JMusicHub.util.*;
 import comp.mycompany.com.JMusicHub.business.*;
 
@@ -17,7 +18,7 @@ public class PlaylistVolatile {
     Playlist nouveau= new Playlist(Nom,Ensemble.size()+1);
     Ensemble.add(nouveau);
   }
-  
+
 
   public void addContenu(LivreAudioVolatile livreaudiovolatile,ChansonVolatile chansonvolatile){
 

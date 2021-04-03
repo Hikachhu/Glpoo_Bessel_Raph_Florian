@@ -4,6 +4,7 @@ import comp.mycompany.com.JMusicHub.business.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 public class AlbumVolatile {
   public ArrayList<Album> Ensemble = new ArrayList<Album>();

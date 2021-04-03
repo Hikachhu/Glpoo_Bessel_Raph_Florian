@@ -1,5 +1,6 @@
 package comp.mycompany.com.JMusicHub.business;
 import comp.mycompany.com.JMusicHub.business.*;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -2,14 +2,17 @@ package comp.mycompany.com.JMusicHub.main;
 import comp.mycompany.com.JMusicHub.util.*;
 import comp.mycompany.com.JMusicHub.business.*;
 import java.io.*;
+import org.apache.log4j.Logger;
 
 
 import java.util.Scanner;
 
 class main{
 
+  final static Logger logger = Logger.getLogger(main.class);
   public static void main(String[] args) {
 
+    logger.info("Debut du programme");
 
     //Couleurs
     final String RESET = "\u001B[0m";

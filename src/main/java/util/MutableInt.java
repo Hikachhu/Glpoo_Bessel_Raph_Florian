@@ -1,8 +1,10 @@
 package comp.mycompany.com.JMusicHub.util;
 import comp.mycompany.com.JMusicHub.util.*;
 import comp.mycompany.com.JMusicHub.business.*;
+import org.apache.log4j.Logger;
 
 public class MutableInt {
+    final static Logger logger = Logger.getLogger(MutableInt.class);
     private int value;
     private int maxValue;
 

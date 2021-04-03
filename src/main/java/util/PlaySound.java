@@ -38,6 +38,7 @@ import java.util.UUID;
 
 import java.util.Scanner;
 import me.tongfei.progressbar.*;
+import org.apache.log4j.Logger;
 
 
 public class PlaySound {
@@ -47,6 +48,8 @@ public class PlaySound {
   private AudioFormat audioFormat;
   private SourceDataLine sourceLine;
   private MutableInt ReadBytes;
+  final static Logger logger = Logger.getLogger(PlaySound.class);
+
 
   public void Lecture(String filename){
     int c;
@@ -59,6 +62,7 @@ public class PlaySound {
     System.out.println(Instant.now() );
       try {
           soundFile = new File(strFilename);
+          logger.info("Ouverture du fichier "+strFilename);
       } catch (Exception e) {
           e.printStackTrace();
           System.exit(1);
@@ -66,6 +70,7 @@ public class PlaySound {
 
       try {
           audioStream = AudioSystem.getAudioInputStream(soundFile);
+          logger.info("Ouverture audioStream de "+soundFile);
       } catch (Exception e){
           e.printStackTrace();
           System.exit(1);
@@ -109,30 +114,53 @@ public class PlaySound {
       System.out.println((double)totalFrames/(double)frameRate);
       int tailleLecture=frameSize;
       audioStream.mark((int)totalFrames*4);
+      logger.info("Debut musique");
+      double s=0.0;
+      int lu=0;
       for(tour=1;tour<totalFrames;) {
 
 
         if(ReadBytes.getValue()==0){
           tailleLecture=0;
+          logger.info("Mise en pause musique");
+          ReadBytes.setValue(-1);
+          while(lu!=1){
+            try{
+              Thread.sleep(10);
+            }catch (Exception e) {
+              System.out.println(e.getMessage());
+            }
+            lu=ReadBytes.getValue();
+          }
+          lu=0;
+          logger.info("Reprise musique");
+
         }else if(ReadBytes.getValue()==1){
           tailleLecture=ReadBytes.getMax();
+          ReadBytes.setValue(-1);
         }else if(ReadBytes.getValue()==2){
           try{
             audioStream.skip((int)(frameRate*30*ReadBytes.getMax()));
-            tour+=(30*nBytesRead/frameSize);
+            tour+=(30*frameRate);
+            logger.info("Acceleration de 30secs de la musique");
+            s+=30*frameRate;
           }catch (Exception e) {
             System.out.println(e.getMessage());
           }
             ReadBytes.setValue(1);
-            System.out.println("Sortie");
         }else if(ReadBytes.getValue()==3){
             System.out.println("Recule de 30secs");
+            logger.info("Recule de 30secs de la musique/non realisé");
             System.out.println(audioStream.markSupported());
             try{
               audioStream.reset();
               audioStream.mark((int)totalFrames*4);
-              audioStream.skip((int)(tour-(nBytesRead/frameSize)*30));
-              tour-=(int)(nBytesRead/frameSize)*30;
+              tour-=(30*frameRate);
+              audioStream.skip((int)(s*frameSize-frameRate*30*frameSize));
+              System.out.println("s ="+s+" decalage ="+(s*frameSize-frameRate*30*frameSize));
+              s=(s-30*frameRate);
+
+              System.out.println(tour);
             }catch (Exception e) {
               System.out.println(e.getMessage());
             }
@@ -152,11 +180,14 @@ public class PlaySound {
         tour+=nBytesRead/frameSize;
         pourcentage1=(int)((float)tour/(float)totalFrames*100);
         if(pourcentage1!=pourcentage2){
+          System.out.println(s);
           pourcentage2=(int)((float)tour/(float)totalFrames*100);
           System.out.println(pourcentage1+	" actual "+tour+" total "+totalFrames);
         }
+        if(s%frameRate==0)System.out.println("s= "+(int)(s/frameRate));
+        s+=1;
       }
-
+      logger.info("Fin musique "+strFilename);
       sourceLine.drain();
       sourceLine.close();
 

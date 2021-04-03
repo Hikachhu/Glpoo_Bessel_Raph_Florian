@@ -20,6 +20,7 @@ import org.xml.sax.SAXException;
 import org.w3c.dom.*;
 import java.io.IOException;
 import java.io.File;
+import org.apache.log4j.Logger;
 
 
 public class Album  implements Listing{
