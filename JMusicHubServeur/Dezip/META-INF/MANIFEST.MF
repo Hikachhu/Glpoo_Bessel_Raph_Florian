@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: florian
+Build-Jdk: 13.0.4
+Class-Path: javafx-media-15-linux.jar javafx-graphics-15.jar javafx-grap
+ hics-15-linux.jar javafx-base-15.jar javafx-base-15-linux.jar javafx-me
+ dia-15.jar progressbar-0.9.1.jar jline-3.19.0.jar
+Main-Class: comp.mycompany.com.JMusicHub.main.main
+

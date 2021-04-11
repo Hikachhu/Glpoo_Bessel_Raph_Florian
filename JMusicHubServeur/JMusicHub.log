@@ -1,0 +1,19 @@
+11-04-2021 11:37:20:290	 type: INFO  	                      main: 35 -	 message: Debut du programme
+11-04-2021 11:37:23:482	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
+11-04-2021 11:37:26:420	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:10
+11-04-2021 11:37:26:442	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
+11-04-2021 11:37:28:171	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:1
+11-04-2021 11:37:28:191	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
+11-04-2021 11:37:30:467	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:12
+11-04-2021 11:37:30:475	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
+11-04-2021 11:37:31:858	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:1
+11-04-2021 11:37:31:968	 type: INFO  	                 PlaySound: 39 -	 message: 
+11-04-2021 11:37:31:968	 type: INFO  	                 PlaySound: 42 -	 message: post ouverture myFile
+11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 44 -	 message: post ouverture mybytearray 53322882
+11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 46 -	 message: fis
+11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 48 -	 message: bis
+11-04-2021 11:37:32:042	 type: INFO  	                 PlaySound: 50 -	 message: bis read
+11-04-2021 11:37:32:043	 type: INFO  	                 PlaySound: 52 -	 message: os  
+11-04-2021 11:37:32:450	 type: INFO  	                 PlaySound: 55 -	 message: post os write
+11-04-2021 11:37:32:475	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
+11-04-2021 11:38:00:839	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:11
