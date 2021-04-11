@@ -1,0 +1,13 @@
+comp/mycompany/com/JMusicHub/util/PlaylistVolatileTest.class
+comp/mycompany/com/JMusicHub/util/ChansonVolatileTest.class
+comp/mycompany/com/JMusicHub/util/WriteChansonVolatileTest.class
+comp/mycompany/com/JMusicHub/util/PlaylistTest.class
+comp/mycompany/com/JMusicHub/util/WriteAlbumVolatileTest.class
+comp/mycompany/com/JMusicHub/util/AlbumTest.class
+comp/mycompany/com/JMusicHub/util/MutableIntTest.class
+comp/mycompany/com/JMusicHub/util/AlbumVolatileTest.class
+comp/mycompany/com/JMusicHub/util/LivreAudioTest.class
+comp/mycompany/com/JMusicHub/util/WriteLivreAudioVolatileTest.class
+comp/mycompany/com/JMusicHub/util/WritePlaylistVolatileTest.class
+comp/mycompany/com/JMusicHub/util/LivreAudioVolatileTest.class
+comp/mycompany/com/JMusicHub/util/ChansonTest.class
