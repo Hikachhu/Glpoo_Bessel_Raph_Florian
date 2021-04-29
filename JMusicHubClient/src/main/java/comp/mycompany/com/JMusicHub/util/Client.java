@@ -25,7 +25,7 @@ import java.io.*;
 import java.net.*;
 
 public class Client {
-  final static Logger logger = Logger.getLogger(PlaySound.class);
+  final static Logger logger = Logger.getLogger(Client.class);
 
   private static DataOutputStream dataOutputStream = null;
   private static DataInputStream dataInputStream = null;
@@ -99,7 +99,7 @@ public class Client {
 
 
     public ChansonVolatile RecupChansonVolatile()throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{
-      ChansonVolatile     ListeChanson    = new ChansonVolatile();
+      ChansonVolatile  ListeChanson = new ChansonVolatile();
       //get the localhost IP address, if server is running on some other IP, you need to use that
       InetAddress host = InetAddress.getLocalHost();
       Socket socket = null;
@@ -115,6 +115,11 @@ public class Client {
       //read the server response message
       ois = new ObjectInputStream(socket.getInputStream());
       ListeChanson = (ChansonVolatile) ois.readObject();
+	  //Object o = ois.readObject();
+	  //System.out.println(ListeChanson);
+	  //System.out.println("=*");
+	  //System.out.println(o.getClass());
+	  //System.out.println( (ChansonVolatile) o);
       //close resources
       ois.close();
       oos.close();
@@ -127,7 +132,7 @@ public class Client {
     }
 
     public LivreAudioVolatile RecupLivreAudioVolatile()throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{
-    LivreAudioVolatile  ListeLivreAudio = new LivreAudioVolatile();
+      LivreAudioVolatile  ListeLivreAudio = new LivreAudioVolatile();
       //get the localhost IP address, if server is running on some other IP, you need to use that
       InetAddress host = InetAddress.getLocalHost();
       Socket socket = null;

@@ -22,8 +22,10 @@ import java.io.File;
 
 public class WriteChansonVolatile extends WriteVolatile{
 
-	public ChansonVolatile readXML(String Fichier) {
-		ChansonVolatile nouvelle = new ChansonVolatile();
+	public StockageVolatile readXML(String Fichier) {
+
+    FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
+		StockageVolatile          nouvelle    = FactoryStockageVolatile.Generate("Chanson");
 		NodeList nodes = this.parseXMLFile(Fichier);
 		if (nodes != null){
 			for (int i = 0; i<nodes.getLength(); i++) {	 // pour toutes les nodes de NodeList nodes
@@ -49,7 +51,8 @@ public class WriteChansonVolatile extends WriteVolatile{
 		return nouvelle;
 	}
 
-	public void writeXML(String Fichier,ChansonVolatile EnsembleAecrire) {
+	public void writeXML(String Fichier,StockageVolatile EnsembleAecrire) {
+
 
 		LivreAudioVolatile  ListeLivreAudio = new LivreAudioVolatile();
 
@@ -63,11 +66,11 @@ public class WriteChansonVolatile extends WriteVolatile{
 		document.appendChild(root);
 
 
-		for (LivreAudio Ecrire : ListeLivreAudio.getEnsemble() ) {
+		for (Stockage Ecrire : ListeLivreAudio.getEnsemble() ) {
 			root.appendChild(Ecrire.getElement(document));
 		}
 
-		for (Chanson Aecrire : EnsembleAecrire.getEnsemble() ) {
+		for (Stockage Aecrire : EnsembleAecrire.getEnsemble() ) {
 			root.appendChild(Aecrire.getElement(document));
 		}
 		this.createXMLFile(document, Fichier);

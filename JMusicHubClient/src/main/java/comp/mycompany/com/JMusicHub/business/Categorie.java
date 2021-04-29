@@ -3,7 +3,7 @@ import org.apache.log4j.Logger;
 import comp.mycompany.com.JMusicHub.business.*;
 
 public enum Categorie{
-  Jeunesse,Roman,Theatre,Discours,Documentaire;
+  Jeunesse,Roman,Theatre,Discours,Documentaire,INCONNU;
   public static String allCategorie(){
     String s="";
     for (Categorie a : Categorie.values()) {

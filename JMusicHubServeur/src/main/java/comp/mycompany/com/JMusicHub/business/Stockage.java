@@ -28,15 +28,21 @@ public abstract class Stockage implements Serializable{
   protected String Titre;
   protected int ID;
   protected String Contenu;
+  protected String Type;
   /**
    * Informations communes à Playlist,Album,Chanson et LivreAudio
    * @param Titre [Titre ou nom du Stockage]
    * @param ID    [ID unique pour se repérer]
    */
-  public Stockage(String Titre,int ID,String Contenu){
+  public Stockage(String Titre,int ID,String Contenu,String Type){
     this.Titre=Titre;
     this.ID=ID;
     this.Contenu=Contenu;
+    this.Type=Type;
+  }
+
+  public String getType(){
+    return Type;
   }
   /**
    * Accesseur du Titre

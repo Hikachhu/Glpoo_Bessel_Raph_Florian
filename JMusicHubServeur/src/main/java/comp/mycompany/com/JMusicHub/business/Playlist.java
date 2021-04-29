@@ -4,11 +4,6 @@ import comp.mycompany.com.JMusicHub.util.*;
 import comp.mycompany.com.JMusicHub.business.*;
 
 import java.util.*;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-
 
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
@@ -20,24 +15,43 @@ import org.w3c.dom.*;
 import java.io.IOException;
 import java.io.*;
 
-public class Playlist  implements Listing,Serializable{
-  public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
+/**
+ * Classe permettant de manipuler une playlist, stockant une liste de livre audio ou Chansons
+ */
+public class Playlist extends StockageVolatile  implements Listing,Serializable{
+  // public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
   String Nom;
   Integer ID;
 
+  /**
+   * constructeur de Playlist
+   * @param Nom Nom de la Playlist
+   * @param ID  Numero de la playlist
+   */
   public Playlist(String Nom,int ID){
     this.Nom=Nom;
     this.ID=ID;
   }
 
+  /**
+   * Accesseur du titre
+   * @return le titre
+   */
   public String getTitre(){
     return Nom;
   }
 
+  /**
+   * Accesseur de l'ID
+   * @return L'Id de la playlist
+   */
   public Integer getID(){
     return ID;
   }
 
+  /**
+   * Affiche l'ensemble des LivreAudio et Chansons stockées
+   */
   public void Affiche(){
     for (Stockage Courant : Ensemble ) {
       System.out.println(Courant);
@@ -48,13 +62,17 @@ public class Playlist  implements Listing,Serializable{
    * Ajoute un element mis en parametre dans la liste
    * @param stock parametre à rajouter
    */
-  public void add(Stockage stock){
-    Ensemble.add(stock);
-  }
-
-  public ArrayList<Stockage> getEnsemble(){
-    return Ensemble;
-  }
+  // public void add(Stockage stock){
+  //   Ensemble.add(stock);
+  // }
+  //
+  // /**
+  //  * Accesseur de la liste des données stockées
+  //  * @return Retourne la liste
+  //  */
+  // public ArrayList<Stockage> getEnsemble(){
+  //   return Ensemble;
+  // }
 
   /**
    * Fonction d'affichage par defaut
@@ -68,25 +86,11 @@ public class Playlist  implements Listing,Serializable{
     return s;
   }
 
-
-  public void addUser(){
-    Scanner clavier = new Scanner(System.in);
-    System.out.println("Entrez le titre:");
-    String Titre=clavier.nextLine();
-    System.out.println("Duree:");
-    int Duree=clavier.nextInt();
-    System.out.println("Artiste:");
-    clavier.nextLine();
-    String Artiste=clavier.nextLine();
-    System.out.println("Contenu:");
-    String Contenu=clavier.nextLine();
-    System.out.println("Genre:");
-    int genre=clavier.nextInt();
-
-    Chanson nouveau= new Chanson(Titre,Duree,Ensemble.size()+1,Artiste,Contenu,genre);
-    Ensemble.add(nouveau);
-  }
-
+  /**
+   * Renvoi un Element en fonction du des elements stockées dans playlist
+   * @param  document document où écrire
+   * @return          Renvoi l'element aaaaaaaaaaaaa
+   */
   public Element getElement(Document document){
     Element client = document.createElement("Playlist");
 

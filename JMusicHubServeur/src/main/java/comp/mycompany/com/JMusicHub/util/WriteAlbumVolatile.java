@@ -78,14 +78,14 @@ public class WriteAlbumVolatile extends WriteVolatile{
 		return nouvelle;
 	}
 
-	public void writeXML(String Fichier,AlbumVolatile EnsembleAecrire) {
+	public void writeXML(String Fichier,StockageMaster EnsembleAecrire) {
 		Document document = this.createXMLDocument();
 		if (document == null) return;
 
 		Element root = document.createElement("ListeAlbums");
 		document.appendChild(root);
 
-		for (Album AlbumEcrire : EnsembleAecrire.getEnsemble() ) {
+		for (StockageVolatile AlbumEcrire : EnsembleAecrire.getEnsemble() ) {
 			root.appendChild(AlbumEcrire.getElement(document));
 		}
 		this.createXMLFile(document, Fichier);

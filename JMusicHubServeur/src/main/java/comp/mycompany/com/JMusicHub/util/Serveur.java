@@ -16,12 +16,12 @@ import java.net.*;
  * moins détaillées pour ce qui est répétitif
  *
  */
-public class Serveur{
+public class Serveur implements XMLFiles{
     private static ServerSocket server;
     //Port fixer
     private static int port = 9876;
     //Declaration du logger
-    final static Logger logger = Logger.getLogger(PlaySound.class);
+    final static Logger logger = Logger.getLogger(Serveur.class);
 
     /**
      * Méthode d'envoi d'un fichier
@@ -99,36 +99,22 @@ public class Serveur{
      * @throws IOException
      * @throws ClassNotFoundException
      */
-    public void EnvoiChansonVolatile(ChansonVolatile ListeChanson)throws IOException, ClassNotFoundException{
-
-      // Ouverture du serveur
+    public void EnvoiChansonVolatile(StockageVolatile ListeChanson)throws IOException, ClassNotFoundException{
       server = new ServerSocket(port);
       System.out.println("Waiting for the client request");
-
-      //Acceptation de la connexion sur le serveur
       Socket socket = server.accept();
       ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+      char ChoixMenu = (char) ois.readObject();
+      System.out.println("Message Received: " + ChoixMenu);
 
-      //Reception d'un message provenant d'un message pour tester la connectivité
-      char TestReception =' ';
-      TestReception= (char) ois.readObject();
-      if(TestReception!=' ')  System.out.println("Reception d'un message client");
-
-      //Ouverture d'un flux pour vers la socket pour envoyer un message
       ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-
-      //Envoi de la liste des chansons passée en parametre
       oos.writeObject(ListeChanson);
-
-      //Fermeture des flux
-      ois.close();
+	  // System.out.println(ListeChanson);
+	  oos.flush();
       oos.close();
+      ois.close();
       socket.close();
-
-      //terminate the server if client sends exit request
-      System.out.println("Fermeture serveur");
-
-      //Fermeture du serveur
+      System.out.println("Shutting down Socket server!!\n");
       server.close();
     }
 
@@ -138,7 +124,7 @@ public class Serveur{
      * @throws IOException
      * @throws ClassNotFoundException
      */
-    public void EnvoiLivreAudioVolatile(LivreAudioVolatile ListeLivreAudio)throws IOException, ClassNotFoundException{
+    public void EnvoiLivreAudioVolatile(StockageVolatile ListeLivreAudio)throws IOException, ClassNotFoundException{
       server = new ServerSocket(port);
       System.out.println("Waiting for the client request");
       Socket socket = server.accept();
@@ -160,7 +146,7 @@ public class Serveur{
      * @throws IOException
      * @throws ClassNotFoundException
      */
-    public void EnvoiAlbumVolatile(AlbumVolatile ListeAlbum)throws IOException, ClassNotFoundException{
+    public void EnvoiAlbumVolatile(StockageMaster ListeAlbum)throws IOException, ClassNotFoundException{
       server = new ServerSocket(port);
       System.out.println("Waiting for the client request");
       Socket socket = server.accept();
@@ -182,7 +168,7 @@ public class Serveur{
      * @throws IOException
      * @throws ClassNotFoundException
      */
-    public void EnvoiPlaylistVolatile(PlaylistVolatile ListePlaylist)throws IOException, ClassNotFoundException{
+    public void EnvoiPlaylistVolatile(StockageMaster ListePlaylist)throws IOException, ClassNotFoundException{
       server = new ServerSocket(port);
       System.out.println("Waiting for the client request");
       Socket socket = server.accept();

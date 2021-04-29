@@ -1,19 +1,19 @@
-11-04-2021 11:37:20:290	 type: INFO  	                      main: 35 -	 message: Debut du programme
-11-04-2021 11:37:23:482	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
-11-04-2021 11:37:26:420	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:10
-11-04-2021 11:37:26:442	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
-11-04-2021 11:37:28:171	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:1
-11-04-2021 11:37:28:191	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
-11-04-2021 11:37:30:467	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:12
-11-04-2021 11:37:30:475	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
-11-04-2021 11:37:31:858	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:1
-11-04-2021 11:37:31:968	 type: INFO  	                 PlaySound: 39 -	 message: 
-11-04-2021 11:37:31:968	 type: INFO  	                 PlaySound: 42 -	 message: post ouverture myFile
-11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 44 -	 message: post ouverture mybytearray 53322882
-11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 46 -	 message: fis
-11-04-2021 11:37:32:008	 type: INFO  	                 PlaySound: 48 -	 message: bis
-11-04-2021 11:37:32:042	 type: INFO  	                 PlaySound: 50 -	 message: bis read
-11-04-2021 11:37:32:043	 type: INFO  	                 PlaySound: 52 -	 message: os  
-11-04-2021 11:37:32:450	 type: INFO  	                 PlaySound: 55 -	 message: post os write
-11-04-2021 11:37:32:475	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:0
-11-04-2021 11:38:00:839	 type: INFO  	                MutableInt: 18 -	 message: Changement de valeur à:11
+29-04-2021 13:45:52:305	 type: INFO  	                      main: 35 -	 message: Debut du programme
+29-04-2021 13:45:58:579	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :12
+29-04-2021 13:46:07:277	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1
+29-04-2021 13:46:29:343	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :12
+29-04-2021 13:46:36:041	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1
+29-04-2021 13:51:16:392	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :10
+29-04-2021 13:51:17:516	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1
+29-04-2021 13:51:21:399	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :6
+29-04-2021 13:51:23:449	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1
+29-04-2021 13:51:23:557	 type: INFO  	                   Serveur: 49 -	 message: Connexion Ã©tablie
+29-04-2021 13:51:23:558	 type: INFO  	                   Serveur: 53 -	 message: post ouverture myFile
+29-04-2021 13:51:23:632	 type: INFO  	                   Serveur: 57 -	 message: post ouverture mybytearray 45503512
+29-04-2021 13:51:23:633	 type: INFO  	                   Serveur: 61 -	 message: fis
+29-04-2021 13:51:23:633	 type: INFO  	                   Serveur: 63 -	 message: bis
+29-04-2021 13:51:23:756	 type: INFO  	                   Serveur: 67 -	 message: bis read
+29-04-2021 13:51:23:756	 type: INFO  	                   Serveur: 71 -	 message: os  
+29-04-2021 13:51:24:057	 type: INFO  	                   Serveur: 76 -	 message: post os write
+29-04-2021 13:51:37:392	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1
+29-04-2021 13:51:53:261	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur Ã :1

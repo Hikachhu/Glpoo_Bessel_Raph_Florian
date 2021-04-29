@@ -79,9 +79,4 @@ class KeyThread implements Runnable {
          t.start ();
       }
    }
-
-
-    public void interrupt() {
-    }
-
 }

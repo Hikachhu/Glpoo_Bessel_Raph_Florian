@@ -7,11 +7,10 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 import java.io.*;
 
-public class LivreAudioVolatile implements Serializable{
-  public ArrayList<LivreAudio> Ensemble = new ArrayList<LivreAudio>();
+public class LivreAudioVolatile extends StockageVolatile implements Serializable{
+  // public ArrayList<LivreAudio> Ensemble = new ArrayList<LivreAudio>();
 
   public void addUser(){
-
     Scanner clavier = new Scanner(System.in);
     System.out.println("Entrez le Titre:");
     String Titre=clavier.nextLine();
@@ -33,32 +32,28 @@ public class LivreAudioVolatile implements Serializable{
 
   public String toString(){
     String s="";
-    for (LivreAudio Courant : Ensemble ) {
+    for (Stockage Courant : Ensemble ) {
       s+=(Courant+"\n");
     }
     return s;
   }
 
-  public void add(LivreAudio nouveau){
-    Ensemble.add(nouveau);
-  }
-
-  public LivreAudio get(int number){
-    return Ensemble.get(number-1);
-  }
-
-  public ArrayList<LivreAudio> getEnsemble(){
-    return Ensemble;
-  }
-
-  public String Trie(){
-    ArrayList<LivreAudio> Trier= new ArrayList<LivreAudio>(Ensemble);
-    Trier.sort((p1, p2) -> (p1.getAuteur().compareTo(p2.getAuteur())));
-    String s="";
-    for (LivreAudio livre : Trier) {
-      s+="\t"+livre+"\n";
+  public String Tri(int Choix){
+    if(Choix==0){
+      ArrayList<Stockage> Init= new ArrayList<Stockage>(Ensemble);
+      ArrayList<LivreAudio> Trier= new ArrayList<LivreAudio>();
+      for (Stockage Actuel : Init ) {
+        Trier.add((LivreAudio)Actuel);
+      }
+      Trier.sort((p1, p2) -> (p1.getAuteur().compareTo(p2.getAuteur())));
+      String s="";
+      for (LivreAudio livre : Trier) {
+        s+="\t"+livre+"\n";
+      }
+      return s;
+    }else{
+      return "ERROR";
     }
-    return s;
   }
 
 }

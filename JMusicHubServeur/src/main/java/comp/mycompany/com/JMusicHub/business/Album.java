@@ -20,13 +20,13 @@ import org.apache.log4j.Logger;
  * Classe permettant de stocker les informations sur un album, contient une liste de chanson
  */
 
-public class Album  implements Listing,Serializable{
+public class Album extends StockageVolatile  implements Listing,Serializable{
   private String Artiste;
   private int DateSortie;
   protected int Duree;
   private String Titre;
   private int ID;
-  public ArrayList<Chanson> EnsembleChanson = new ArrayList<Chanson>();
+  // public ArrayList<Chanson> EnsembleChanson = new ArrayList<Chanson>();
 
   /**
    * Classe Album
@@ -80,21 +80,21 @@ public class Album  implements Listing,Serializable{
     return String.valueOf(min)+"m"+String.valueOf(secondes)+"s";
   }
 
-  /**
-   * Ajoute une chanson dans la liste des chansons
-   * @param stock Chanson à ajouter
-   */
-  public void add(Chanson stock){
-    EnsembleChanson.add(stock);
-  }
-
-  /**
-   * Accesseur de l'ArrayList des chansons
-   * @return ArrayList contenant les chansons
-   */
-  public ArrayList<Chanson> getEnsemble(){
-    return EnsembleChanson;
-  }
+  // /**
+  //  * Ajoute une chanson dans la liste des chansons
+  //  * @param stock Chanson à ajouter
+  //  */
+  // public void add(Chanson stock){
+  //   EnsembleChanson.add(stock);
+  // }
+  //
+  // /**
+  //  * Accesseur de l'ArrayList des chansons
+  //  * @return ArrayList contenant les chansons
+  //  */
+  // public ArrayList<Chanson> getEnsemble(){
+  //   return EnsembleChanson;
+  // }
 
   /**
    * Accesseur de la date de sortie
@@ -110,7 +110,7 @@ public class Album  implements Listing,Serializable{
    */
   public String toString(){
     String s="Album: "+getTitre()+" ID: "+getID()+" Artiste: "+Artiste+" DateSortie: "+DateSortie+" Duree: "+getDureeMin()+"\n";
-    for (Chanson Courant : EnsembleChanson ) {
+    for (Stockage Courant : Ensemble ) {
       s+=("\t\t"+Courant+"\n");
     }
     return s;
@@ -154,7 +154,7 @@ public class Album  implements Listing,Serializable{
 
         Element ListeChanson = document.createElement("ListeChanson");
 
-        for(Chanson  ChansonEcrire : EnsembleChanson){
+        for(Stockage  ChansonEcrire : Ensemble){
           ListeChanson.appendChild(ChansonEcrire.getElement(document));
         }
 
@@ -166,9 +166,15 @@ public class Album  implements Listing,Serializable{
    * Genere un ArrayList contenant les chansons triée selon les genres
    * @return l'ArrayList avec les chansons
    */
-  public ArrayList<Chanson> Tri(){
-   ArrayList<Chanson> Trier= new ArrayList<Chanson>(EnsembleChanson);
+  public ArrayList<Chanson> TriAlbum(){
+   ArrayList<Stockage> Init= new ArrayList<Stockage>(Ensemble);
+   ArrayList<Chanson> Trier= new ArrayList<Chanson>();
+   for (Stockage init : Init ) {
+     Trier.add((Chanson)init);
+   }
+
    Trier.sort((p1, p2) -> p1.getGenre().compareTo(p2.getGenre()));
    return Trier;
   }
+
 }

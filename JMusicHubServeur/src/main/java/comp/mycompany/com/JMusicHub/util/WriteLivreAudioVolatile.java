@@ -51,23 +51,24 @@ public class WriteLivreAudioVolatile extends WriteVolatile{
 		return nouvelle;
 	}
 
-	public void writeXML(String Fichier,LivreAudioVolatile EnsembleAecrire) {
+	public void writeXML(String Fichier,StockageVolatile EnsembleAecrire) {
 		Document document = this.createXMLDocument();
 		if (document == null) return;
 
 		Element root = document.createElement("LivreAudios");
 		document.appendChild(root);
 
-		ChansonVolatile  ListeChanson = new ChansonVolatile();
+		FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
+		StockageVolatile  ListeChanson = FactoryStockageVolatile.Generate("Chanson");
 
 		WriteChansonVolatile FichierChansons = new WriteChansonVolatile();
 		ListeChanson  = FichierChansons.readXML("files/Element.xml");
 
-		for (LivreAudio Aecrire : EnsembleAecrire.getEnsemble() ) {
+		for (Stockage Aecrire : EnsembleAecrire.getEnsemble() ) {
 			root.appendChild(Aecrire.getElement(document));
 		}
 
-		for (Chanson Aecrire : ListeChanson.getEnsemble() ) {
+		for (Stockage Aecrire : ListeChanson.getEnsemble() ) {
 			root.appendChild(Aecrire.getElement(document));
 		}
 

@@ -9,22 +9,6 @@ import java.io.ObjectOutputStream;
 import java.io.File;
 import java.io.IOException;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
-
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
@@ -40,41 +24,45 @@ import java.util.Scanner;
 import me.tongfei.progressbar.*;
 import org.apache.log4j.Logger;
 
-
+/**
+ * Classe permettant d'envoyer toutes les musiques à jouer sur le client
+ */
 public class PlaySound {
-  private final int BUFFER_SIZE = 115384;
   private File soundFile;
-  private AudioInputStream audioStream;
-  private AudioFormat audioFormat;
-  private SourceDataLine sourceLine;
-  private MutableInt ReadBytes;
-  final static Logger logger = Logger.getLogger(PlaySound.class);
-  
+  final Logger logger = Logger.getLogger(PlaySound.class);
 
-  public void LecturePlaylist(Playlist PlaylistJouer){
+  /**
+   * Envoi toutes les musiques d'une playlist un par un
+   * @param PlaylistJouer Playlist à envoyer au client
+   */
+  public void LecturePlaylist(StockageVolatile PlaylistJouer){
     Serveur serveur = new Serveur();
-
     for (Stockage Ajouer : PlaylistJouer.getEnsemble()) {
       System.out.println("Lecture de "+Ajouer);
       try{
-        serveur.sendFile("Data/"+Ajouer.getContenu());
+        serveur.sendFile("Data/"+Ajouer.getType()+"/"+Ajouer.getContenu());
+        logger.info("Envoi réussi du fichier"+"Data/"+Ajouer.getType()+"/"+Ajouer.getContenu());
       }catch (Exception e) {
-
+        logger.error("Echec envoi de "+"Data/"+Ajouer.getType()+"/"+Ajouer.getContenu(),e);
       }
     }
   }
 
-  public void LectureAlbum(Album AlbumJouer){
+  /**
+   * Envoi toutes les musiques d'une playlist un par un
+   * @param AlbumJouer Album à envoyer au client
+   */
+  public void LectureAlbum(StockageVolatile AlbumJouer){
     Serveur serveur = new Serveur();
     System.out.println(AlbumJouer.getEnsemble());
     for (Stockage Ajouer : AlbumJouer.getEnsemble()) {
       System.out.println(Ajouer);
       System.out.println("Lecture du fichier "+Ajouer.getContenu());
       try{
-        serveur.sendFile("Data/"+Ajouer.getContenu());
-        System.out.println("Fini "+Ajouer.getContenu());
+        serveur.sendFile("Data/"+Ajouer.getType()+"/"+Ajouer.getContenu());
+        logger.info("Envoi réussi du fichier"+"Data/"+Ajouer.getContenu());
       }catch (Exception e) {
-        System.out.println(e.getMessage());
+        logger.error("Echec envoi de "+"Data/"+Ajouer.getType()+"/"+Ajouer.getContenu(),e);
       }
     }
   }

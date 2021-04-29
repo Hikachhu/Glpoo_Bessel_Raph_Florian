@@ -113,7 +113,7 @@ public class PlaySound {
       int pourcentage1=0,pourcentage2=0;
 
       byte[] abData = new byte[frameSize];
-      ReadBytes=new MutableInt(1,frameSize);
+      ReadBytes=MutableInt.getInstance();
       KeyThread R1 = new KeyThread(ReadBytes);
       audioStream.mark(frameSize);
       R1.start();
@@ -122,6 +122,8 @@ public class PlaySound {
       logger.info("Debut musique");
       double s=0.0;
       int lu=0;
+      ReadBytes.setValue(1);
+      ReadBytes.setMax((int)frameSize);
       for(tour=1;tour<totalFrames;) {
 
 
@@ -193,7 +195,6 @@ public class PlaySound {
         s+=1;
       }
       logger.info("Fin musique "+strFilename);
-      R1.interrupt();
       sourceLine.drain();
       sourceLine.close();
       try {
@@ -222,25 +223,13 @@ public class PlaySound {
       }
   }
 
-  public void LecturePlaylist(Playlist PlaylistJouer,String tempDir){
+  public void LectureListe(StockageVolatile PlaylistJouer,String tempDir){
     Client client = new Client();
     for (Stockage Ajouer : PlaylistJouer.getEnsemble()) {
       System.out.println("Lecture de "+Ajouer);
       try{client.receiveFile(tempDir, Ajouer.getContenu());}catch (Exception e) {
 
       }
-      Lecture(tempDir+Ajouer.getContenu());
-    }
-  }
-
-  public void LectureAlbum(Album AlbumJouer,String tempDir){
-    Client client = new Client();
-    for (Stockage Ajouer : AlbumJouer.getEnsemble()) {
-      System.out.println("Lecture de "+Ajouer);
-      try{client.receiveFile(tempDir, Ajouer.getContenu());}catch (Exception e) {
-
-      }
-      System.out.println(tempDir+Ajouer.getContenu());
       Lecture(tempDir+Ajouer.getContenu());
     }
   }

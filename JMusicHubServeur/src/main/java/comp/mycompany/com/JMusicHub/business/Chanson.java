@@ -20,12 +20,12 @@ import java.io.IOException;
 import java.io.*;
 
 
-public class Chanson extends Stockage implements Listing,Serializable{
+public class Chanson extends Stockage implements Listing,Serializable,LienPhysique{
   private String Artiste;
   protected int Duree;
   Genre genre;
   public Chanson(String Titre,int Duree,int ID,String Artiste,String Contenu,int genre){
-    super(Titre,ID,Contenu);
+    super(Titre,ID,Contenu,"Chansons");
     this.Artiste=Artiste;
     this.Contenu=Contenu;
     this.Duree=Duree;

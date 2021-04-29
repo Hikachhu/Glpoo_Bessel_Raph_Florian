@@ -87,14 +87,14 @@ public class WritePlaylistVolatile extends WriteVolatile{
 		return nouvelle;
 	}
 
-	public void writeXML(String Fichier,PlaylistVolatile EnsembleAecrire) {
+	public void writeXML(String Fichier,StockageMaster EnsembleAecrire) {
 		Document document = this.createXMLDocument();
 		if (document == null) return;
 
 		Element root = document.createElement("ListePlaylist");
 		document.appendChild(root);
 
-		for (Playlist PlaylistEcrire : EnsembleAecrire.getEnsemble() ) {
+		for (StockageVolatile PlaylistEcrire : EnsembleAecrire.getEnsemble() ) {
 			root.appendChild(PlaylistEcrire.getElement(document));
 		}
 		this.createXMLFile(document, Fichier);

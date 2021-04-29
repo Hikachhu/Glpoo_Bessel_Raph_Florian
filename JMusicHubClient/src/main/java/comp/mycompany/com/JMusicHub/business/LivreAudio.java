@@ -19,14 +19,14 @@ import java.io.IOException;
 import java.io.*;
 
 
-public class LivreAudio extends Stockage implements Listing,Serializable{
+public class LivreAudio extends Stockage implements Listing,Serializable,LienPhysique{
   private String Auteur;
   private int Duree;
   private Langues langue;
   private Categorie categorie;
 
   public LivreAudio(String Titre,int Duree,int ID,String Auteur,String Contenu,int langue,int categorie){
-    super(Titre,ID,Contenu);
+    super(Titre,ID,Contenu,"LivresAudios");
     this.Auteur=Auteur;
     this.Contenu=Contenu;
     this.Duree=Duree;

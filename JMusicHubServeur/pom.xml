@@ -15,8 +15,21 @@
     <start-class>comp.mycompany.com.JMusicHub.main.main</start-class>
     <project.build.sourceencoding>UTF-8</project.build.sourceencoding>
   </properties>
- 
+  
+  <repositories>
+    <repository>
+        <id>jaudiotagger-repository</id>
+	<name>ProjectRepo</name>
+        <url>file://${project.basedir}/libs</url>
+    </repository>
+</repositories>
+
   <dependencies>
+    <dependency>
+        <groupId>net.jthink</groupId>
+        <artifactId>jaudiotagger</artifactId>
+        <version>2.2.6</version>
+    </dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
@@ -122,7 +135,8 @@
         </execution>
       </executions>
     </plugin>
-    <plugin>
+    <!--
+	<plugin>
           <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>			
 			<configuration>
@@ -138,14 +152,14 @@
                     <phase>package</phase>
                 </execution>
             </executions>
-    </plugin> 
+    </plugin> -->
   </plugins>
 </build>
 
   <reporting>
     <excludeDefaults>true</excludeDefaults>
     <plugins>
-      <plugin>	
+      <!--<plugin>	
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>			
 		<configuration>
@@ -160,7 +174,8 @@
             </reports>
           </reportSet>
         </reportSets>
-      </plugin>
+      </plugin>-->
+	  
     </plugins>
   </reporting>
 
