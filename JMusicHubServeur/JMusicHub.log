@@ -1,19 +1,19 @@
-29-04-2021 13:45:52:305	 type: INFO  	                      main: 35 -	 message: Debut du programme
-29-04-2021 13:45:58:579	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:12
-29-04-2021 13:46:07:277	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-29-04-2021 13:46:29:343	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:12
-29-04-2021 13:46:36:041	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-29-04-2021 13:51:16:392	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:10
-29-04-2021 13:51:17:516	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-29-04-2021 13:51:21:399	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:6
-29-04-2021 13:51:23:449	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-29-04-2021 13:51:23:557	 type: INFO  	                   Serveur: 49 -	 message: Connexion établie
-29-04-2021 13:51:23:558	 type: INFO  	                   Serveur: 53 -	 message: post ouverture myFile
-29-04-2021 13:51:23:632	 type: INFO  	                   Serveur: 57 -	 message: post ouverture mybytearray 45503512
-29-04-2021 13:51:23:633	 type: INFO  	                   Serveur: 61 -	 message: fis
-29-04-2021 13:51:23:633	 type: INFO  	                   Serveur: 63 -	 message: bis
-29-04-2021 13:51:23:756	 type: INFO  	                   Serveur: 67 -	 message: bis read
-29-04-2021 13:51:23:756	 type: INFO  	                   Serveur: 71 -	 message: os  
-29-04-2021 13:51:24:057	 type: INFO  	                   Serveur: 76 -	 message: post os write
-29-04-2021 13:51:37:392	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-29-04-2021 13:51:53:261	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
+02-05-2021 15:15:50:328	 type: INFO  	                      main: 35 -	 message: Debut du programme
+02-05-2021 15:15:50:335	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:15:50:336	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+02-05-2021 15:15:50:337	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+02-05-2021 15:15:50:337	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+02-05-2021 15:15:50:405	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:15:50:797	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+02-05-2021 15:15:50:875	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:15:50:875	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+02-05-2021 15:15:50:875	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+02-05-2021 15:15:50:876	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+02-05-2021 15:15:50:879	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:15:51:024	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+02-05-2021 15:16:02:640	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:10
+02-05-2021 15:16:02:647	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:16:02:837	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+02-05-2021 15:16:14:827	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
+02-05-2021 15:16:14:851	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+02-05-2021 15:16:15:045	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio

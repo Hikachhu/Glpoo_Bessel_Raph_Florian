@@ -15,7 +15,7 @@ public class MutableInt implements Mutable{
 
     public static MutableInt getInstance(){
       if(instance==null){
-        instance=new MutableInt(0,0);
+        instance= new MutableInt(0,0);
       }
       return instance;
     }
@@ -45,8 +45,8 @@ public class MutableInt implements Mutable{
     /**
      * Met value à la valeur max
      */
-    public void setMax(){
-      this.value=this.maxValue;
+    public void setMax(int max){
+      this.maxValue=max;
     }
 
     public int getMax(){

@@ -21,9 +21,15 @@ import java.io.IOException;
 import java.io.File;
 import java.util.UUID;
 
-
+/**
+ * Classe ecrivant/lisant les informations d'une liste d'albums dans un fichier XML
+ */
 public class WriteAlbumVolatile extends WriteVolatile{
-
+	/**
+	* Lis une liste d'Album depuis un fichier passé en parametre
+	* @param  Fichier Fichier contenant la liste des Albums
+	* @return         Liste lu
+	*/
 	public AlbumVolatile readXML(String Fichier) {
 		AlbumVolatile nouvelle = new AlbumVolatile();
 

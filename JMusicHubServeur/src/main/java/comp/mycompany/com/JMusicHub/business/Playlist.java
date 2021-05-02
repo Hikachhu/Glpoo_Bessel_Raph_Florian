@@ -18,8 +18,8 @@ import java.io.*;
 /**
  * Classe permettant de manipuler une playlist, stockant une liste de livre audio ou Chansons
  */
-public class Playlist extends StockageVolatile  implements Listing,Serializable{
-  // public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
+public class Playlist implements StockageVolatile, Listing,Serializable{
+   public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
   String Nom;
   Integer ID;
 
@@ -62,17 +62,17 @@ public class Playlist extends StockageVolatile  implements Listing,Serializable{
    * Ajoute un element mis en parametre dans la liste
    * @param stock parametre à rajouter
    */
-  // public void add(Stockage stock){
-  //   Ensemble.add(stock);
-  // }
-  //
-  // /**
-  //  * Accesseur de la liste des données stockées
-  //  * @return Retourne la liste
-  //  */
-  // public ArrayList<Stockage> getEnsemble(){
-  //   return Ensemble;
-  // }
+  public void add(Stockage stock){
+    Ensemble.add(stock);
+  }
+
+  /**
+   * Accesseur de la liste des données stockées
+   * @return Retourne la liste
+   */
+  public ArrayList<Stockage> getEnsemble(){
+    return Ensemble;
+  }
 
   /**
    * Fonction d'affichage par defaut
@@ -110,6 +110,29 @@ public class Playlist extends StockageVolatile  implements Listing,Serializable{
       client.appendChild(ListeAudios);
 
       return client;
+  }
+
+
+       /**
+        * Accesseur d'un element specifique
+        * @param  number Numero de l'element à obtenir
+        * @return        Element selectionné
+        */
+  public Stockage get(int Numero){
+    return Ensemble.get(Numero);
+  }
+
+
+    /**
+     * Tri de la liste de la manière voulu
+     * @param  Choix Choix du mode de triage
+     * @return       String contenant la liste formaté
+     */
+  public String Tri(int Selection){
+      if(Selection==0)
+        return toString();
+      else
+        return "ERROR";
   }
 
 }

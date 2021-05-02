@@ -16,7 +16,7 @@ import java.net.*;
  * moins détaillées pour ce qui est répétitif
  *
  */
-public class Serveur implements XMLFiles{
+public class Serveur implements InterfaceServeur{
     private static ServerSocket server;
     //Port fixer
     private static int port = 9876;
@@ -109,8 +109,8 @@ public class Serveur implements XMLFiles{
 
       ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
       oos.writeObject(ListeChanson);
-	  // System.out.println(ListeChanson);
-	  oos.flush();
+  	  // System.out.println(ListeChanson);
+  	  oos.flush();
       oos.close();
       ois.close();
       socket.close();
@@ -121,8 +121,6 @@ public class Serveur implements XMLFiles{
     /**
      * Méthode envoyant les livres audios
      * @param  ListeLivreAudio         Liste des livres à envoyer
-     * @throws IOException
-     * @throws ClassNotFoundException
      */
     public void EnvoiLivreAudioVolatile(StockageVolatile ListeLivreAudio)throws IOException, ClassNotFoundException{
       server = new ServerSocket(port);

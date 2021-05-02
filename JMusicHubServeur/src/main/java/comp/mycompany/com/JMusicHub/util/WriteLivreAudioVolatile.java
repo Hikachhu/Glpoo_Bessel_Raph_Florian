@@ -20,9 +20,16 @@ import java.io.IOException;
 import java.io.File;
 import java.util.UUID;
 
-
+/**
+ * Classe ecrivant/lisant les informations d'une liste de LivreAudio dans un fichier XML
+ */
 public class WriteLivreAudioVolatile extends WriteVolatile{
 
+	/**
+	* Lis une liste de LivreAudio depuis un fichier passé en parametre
+	* @param  Fichier Fichier contenant la liste des LivreAudio
+	* @return         Liste lu
+	*/
 	public LivreAudioVolatile readXML(String Fichier) {
 		LivreAudioVolatile nouvelle = new LivreAudioVolatile();
 		NodeList nodes = this.parseXMLFile(Fichier);
@@ -42,7 +49,7 @@ public class WriteLivreAudioVolatile extends WriteVolatile{
 							LivreAudio lu = new LivreAudio(Titre,Duree,ID,Auteur,Contenu,Langue,Categorie);
 							nouvelle.add(lu);
 						} catch (Exception ex) {
-							System.out.println("Something is wrong with the XML client element");
+							System.out.println("Something is wrong with the XML client element"+ex.getMessage());
 						}
 					}
 				}
@@ -62,7 +69,7 @@ public class WriteLivreAudioVolatile extends WriteVolatile{
 		StockageVolatile  ListeChanson = FactoryStockageVolatile.Generate("Chanson");
 
 		WriteChansonVolatile FichierChansons = new WriteChansonVolatile();
-		ListeChanson  = FichierChansons.readXML("files/Element.xml");
+		ListeChanson  = FichierChansons.readXML(Fichier);
 
 		for (Stockage Aecrire : EnsembleAecrire.getEnsemble() ) {
 			root.appendChild(Aecrire.getElement(document));

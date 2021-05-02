@@ -6,14 +6,49 @@ import comp.mycompany.com.JMusicHub.business.*;
 import java.util.*;
 import java.io.Serializable;
 
-public class PlaylistVolatile extends StockageMaster implements Serializable{
+public class PlaylistVolatile implements StockageMaster, Serializable{
+
+  public ArrayList<StockageVolatile> Ensemble = new ArrayList<StockageVolatile>();
+
+  /**
+  * Ajout d'une liste dans la liste des listes
+  * @param nouveau [description]
+  */
+  public void add(StockageVolatile nouveau){
+  Ensemble.add(nouveau);
+  }
+
+  /**
+   * Suppression d'une liste dans la liste disponibles
+   */
+   public void Suppression(){
+    final Logger logger = Logger.getLogger(PlaylistVolatile.class);
+    int Number;
+    Serveur serveur = new Serveur();
+    MutableInt ChoixClient = MutableInt.getInstance();
+    try{
+      serveur.ChoixUser(ChoixClient);
+      logger.info("Reception du choix client pour la suppression d'une playlist");
+    }catch (Exception e) {
+      logger.error("Erreur dans la reception d'un choix client pour supprimer la playlist",e);
+    }
+    Number=ChoixClient.getValue();
+    Ensemble.remove(Number);
+  }
+
+
+  /**
+ * Ajout d'un element dans une des listes
+ * @param ListeNumber Numero de la liste dans laquelle ajouter un element
+   * @param Aajouter    Element à ajouter
+   */
+  public void add(int ListeNumber,Stockage Aajouter){
+   StockageVolatile nouveau=Ensemble.get(ListeNumber);
+   nouveau.add(Aajouter);
+  }
+
   // public ArrayList<Playlist> Ensemble = new ArrayList<Playlist>();
-
-
- public void addUser(){
-   FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
-   StockageVolatile livreaudiovolatile = FactoryStockageVolatile.Generate("Chanson");
-   StockageVolatile chansonvolatile= FactoryStockageVolatile.Generate("LivreAudio");
+ public void addUser(StockageVolatile ...Utile){
    final Logger logger = Logger.getLogger(PlaylistVolatile.class);
    Serveur serveur = new Serveur();
    MutableInt ChoixClient =  MutableInt.getInstance();
@@ -35,10 +70,10 @@ public class PlaylistVolatile extends StockageMaster implements Serializable{
    //Affichage des listes disponibles
    System.out.println("Contenu que vous pouvez ajouter:");
    System.out.println("Chanson:");
-   System.out.println(chansonvolatile);
+   System.out.println(Utile[1]);
 
    System.out.println("Livre audio:");
-   System.out.println(livreaudiovolatile);
+   System.out.println(Utile[0]);
 
    do {
      System.out.println("c ajouter chanson\nl ajouter livreaudio\nEntrez une commande:");
@@ -59,7 +94,7 @@ public class PlaylistVolatile extends StockageMaster implements Serializable{
            logger.error("Echec reception d'id",e);
          }
          number=ChoixClient.getValue();
-         if(number>=0&&number<=(chansonvolatile.getEnsemble()).size()) nouvelle.add(chansonvolatile.get(number));
+         if(number>=0&&number<=(Utile[1].getEnsemble()).size()) nouvelle.add(Utile[1].get(number));
          break;
 
        case 2:
@@ -70,32 +105,17 @@ public class PlaylistVolatile extends StockageMaster implements Serializable{
            logger.error("Echec reception d'id",e);
          }
          number=ChoixClient.getValue();
-         if(number>=0&&number<=livreaudiovolatile.getEnsemble().size()) nouvelle.add(livreaudiovolatile.get(number));
-         else System.out.println("Id inconnu");
+         if(number>=0&&number<=Utile[0].getEnsemble().size())
+            Utile[0].add(Utile[0].get(number));
+         else
+            System.out.println("Id inconnu");
          break;
      }
      //Sorti de la boucle si le choix est 3 pour le client
    } while (c!=3);
    Ensemble.add(nouvelle);
+   logger.info("Ajout de :"+nouvelle);
    logger.info("Ajout de la playlist créé dans la liste des playlist");
- }
-
- /**
- * suppression d'une playlist grâce à un client
- */
- public void suppression(){
-   final Logger logger = Logger.getLogger(PlaylistVolatile.class);
-   int Number;
-   Serveur serveur = new Serveur();
-   MutableInt ChoixClient = MutableInt.getInstance();
-   try{
-     serveur.ChoixUser(ChoixClient);
-     logger.info("Reception du choix client pour la suppression d'une playlist");
-   }catch (Exception e) {
-     logger.error("Erreur dans la reception d'un choix client pour supprimer la playlist",e);
-   }
-   Number=ChoixClient.getValue();
-   Ensemble.remove(Number-1);
  }
 
   public String Tri(int Choix){
@@ -116,4 +136,34 @@ public class PlaylistVolatile extends StockageMaster implements Serializable{
     }
   }
 
+  /**
+   * Accesseur d'un album parmis l'ArrayList d'albums
+   * @param  number Numero de l'Album à récupérer
+   * @return        Renvoi l'album selectionné
+   */
+  public StockageVolatile get(int number){
+    return Ensemble.get(number);
+  }
+
+
+  /**
+   * Accesseur de la l'ArrayList
+   * @return ArrayList d'Album
+   */
+  public ArrayList<StockageVolatile> getEnsemble(){
+    return Ensemble;
+  }
+
+
+  /**
+   * Creer un String contenant l'ensemble des chansons avec les informations sur l'album au début
+   * @return Renvoi la chaine de caractere
+   */
+  public String toString(){
+    String s="";
+    for (StockageVolatile Courant : Ensemble ) {
+      s+=(Courant+"\n");
+    }
+    return s;
+  }
 }

@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.io.*;
 
 
-public class Chanson extends Stockage implements Listing,Serializable,LienPhysique{
+public class Chanson extends Stockage implements Listing,Serializable{
   private String Artiste;
   protected int Duree;
   Genre genre;

@@ -19,11 +19,17 @@ import org.w3c.dom.*;
 import java.io.IOException;
 import java.io.File;
 
-
+/**
+ * Classe ecrivant/lisant les informations d'une liste de chansons dans un fichier XML
+ */
 public class WriteChansonVolatile extends WriteVolatile{
 
+	/**
+	 * Lis une liste de chansons depuis un fichier passé en parametre
+	 * @param  Fichier Fichier contenant la liste des chansons
+	 * @return         Liste lu
+	 */
 	public StockageVolatile readXML(String Fichier) {
-
     FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
 		StockageVolatile          nouvelle    = FactoryStockageVolatile.Generate("Chanson");
 		NodeList nodes = this.parseXMLFile(Fichier);
@@ -42,7 +48,7 @@ public class WriteChansonVolatile extends WriteVolatile{
 							Chanson lu = new Chanson(Titre,Duree,ID,Artiste,Contenu,Genre);
 							nouvelle.add(lu);
 						} catch (Exception ex) {
-							System.out.println("Something is wrong with the XML client element");
+							System.out.println("Something is wrong with the XML client element"+ex.getMessage());
 						}
 					}
 				}
@@ -57,7 +63,7 @@ public class WriteChansonVolatile extends WriteVolatile{
 		LivreAudioVolatile  ListeLivreAudio = new LivreAudioVolatile();
 
 		WriteLivreAudioVolatile FichierLivreAudio = new WriteLivreAudioVolatile();
-		ListeLivreAudio  = FichierLivreAudio.readXML("files/Element.xml");
+		ListeLivreAudio  = FichierLivreAudio.readXML(Fichier);
 
 		Document document = this.createXMLDocument();
 		if (document == null) return;

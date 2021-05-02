@@ -17,16 +17,19 @@ import java.io.*;
 import org.apache.log4j.Logger;
 
 /**
- * Classe permettant de stocker les informations sur un album, contient une liste de chanson
+ * Classe permettant de stocker les informations sur un album, contient une liste de Stockage
  */
 
-public class Album extends StockageVolatile  implements Listing,Serializable{
+public class Album implements StockageVolatile, Listing,Serializable{
   private String Artiste;
   private int DateSortie;
   protected int Duree;
   private String Titre;
   private int ID;
-  // public ArrayList<Chanson> EnsembleChanson = new ArrayList<Chanson>();
+  /**
+   * Stocke l'ensemble des stockages
+   */
+  public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
 
   /**
    * Classe Album
@@ -80,21 +83,21 @@ public class Album extends StockageVolatile  implements Listing,Serializable{
     return String.valueOf(min)+"m"+String.valueOf(secondes)+"s";
   }
 
-  // /**
-  //  * Ajoute une chanson dans la liste des chansons
-  //  * @param stock Chanson à ajouter
-  //  */
-  // public void add(Chanson stock){
-  //   EnsembleChanson.add(stock);
-  // }
-  //
-  // /**
-  //  * Accesseur de l'ArrayList des chansons
-  //  * @return ArrayList contenant les chansons
-  //  */
-  // public ArrayList<Chanson> getEnsemble(){
-  //   return EnsembleChanson;
-  // }
+  /**
+   * Ajoute une chanson dans la liste des chansons
+   * @param stock Chanson à ajouter
+   */
+  public void add(Stockage stock){
+    Ensemble.add(stock);
+  }
+
+  /**
+   * Accesseur de l'ArrayList des chansons
+   * @return ArrayList contenant les chansons
+   */
+  public ArrayList<Stockage> getEnsemble(){
+    return Ensemble;
+  }
 
   /**
    * Accesseur de la date de sortie
@@ -114,6 +117,15 @@ public class Album extends StockageVolatile  implements Listing,Serializable{
       s+=("\t\t"+Courant+"\n");
     }
     return s;
+  }
+
+  /**
+   * Renvoi un element contenu dans la liste des Stockages
+   * @param  Numero Numero de l'element voulu
+   * @return        Element voulu
+   */
+  public Stockage get(int Numero){
+    return Ensemble.get(Numero);
   }
 
   /**
@@ -176,5 +188,24 @@ public class Album extends StockageVolatile  implements Listing,Serializable{
    Trier.sort((p1, p2) -> p1.getGenre().compareTo(p2.getGenre()));
    return Trier;
   }
+
+  /**
+   * Tri la liste des Stockage selon un choix
+   * @param  Selection Numero du tri voulu
+   * @return           Renvoi la liste formaté selon le tri voulu
+   */
+ public String Tri(int Selection){
+   if(Selection==0){
+      ArrayList<Stockage> Init= new ArrayList<Stockage>(Ensemble);
+      ArrayList<Chanson> Trier= new ArrayList<Chanson>();
+      for (Stockage init : Init ) {
+        Trier.add((Chanson)init);
+      }
+      Trier.sort((p1, p2) -> p1.getGenre().compareTo(p2.getGenre()));
+      return Trier.toString();
+    }else{
+      return "ERROR";
+    }
+ }
 
 }

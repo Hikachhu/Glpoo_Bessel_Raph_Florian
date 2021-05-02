@@ -7,99 +7,100 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ChansonVolatile extends StockageVolatile implements Serializable{
-  // public ArrayList<Chanson> Ensemble = new ArrayList<Chanson>();
+import javax.xml.parsers.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.xml.sax.SAXException;
+
+import org.w3c.dom.*;
+import java.io.IOException;
+import java.io.*;
+
+/**
+ * Classe destinée au stockage de Chansons par le stockage d'une liste de Stockage
+ */
+public class ChansonVolatile implements StockageVolatile, Serializable{
+  public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
 
   /**
-   * Ajout d'une chanson dans la list des chansons en lui demandant des informations clavier
+   * Formatage spécifique de la liste
+   * @return Chaine formaté
    */
-  public void addUser(){
-    Client client = new Client();
-    MutableInt mutableInt =MutableInt.getInstance();
-    try{
-      Scanner clavier = new Scanner(System.in);
-      System.out.println("Entrez le titre:");
-      String Titre=clavier.nextLine();
-      try{
-        client.EnvoiString(Titre);
-      }catch (Exception e) {
-
-      }
-      System.out.println("Duree:");
-      int Duree=clavier.nextInt();
-      mutableInt.setValue(Duree);
-      try{
-        client.EnvoiChoix(mutableInt);
-      }catch (Exception e) {
-
-      }
-      clavier.nextLine();
-      System.out.println("Artiste:");
-      String Artiste=clavier.nextLine();
-      try{
-        client.EnvoiString(Artiste);
-      }catch (Exception e) {
-
-      }
-      System.out.println("Contenu:");
-      String Contenu=clavier.nextLine();
-      try{
-        client.EnvoiString(Contenu);
-      }catch (Exception e) {
-
-      }
-      System.out.println("Genre ? (Veillez entrer le numero du genre voulu)"+Genre.allGenre());
-      int genre=clavier.nextInt();
-
-      mutableInt.setValue(genre);
-      try{
-        client.EnvoiChoix(mutableInt);
-      }catch (Exception e) {
-
-      }
-    }catch (Exception e) {
-      System.out.println("Erreur lors des entrées utilisateurs");
+  public String toString(){
+    String s="";
+    for (Stockage Courant : Ensemble ) {
+      s+=("\t"+Courant+"\n");
     }
-    System.out.println("Chanson ajoutée");
+    return s;
   }
 
-  // /**
-  //  * Ajoute une chanson dans la list des chansons
-  //  * @param nouveau Chanson à ajouter
-  //  */
-  // public void add(Chanson nouveau){
-  //   Ensemble.add(nouveau);
-  // }
-  //
-  // /**
-  //  * Renvoi la list des chansons de la Liste
-  //  * @return String avec sur chaque ligne une Chanson
-  //  */
-  // public String toString(){
-  //   String s="";
-  //   for (Chanson Courant : Ensemble ) {
-  //     s+=("\t"+Courant+"\n");
-  //   }
-  //   return s;
-  // }
-  //
-  // /**
-  //  * Accesseur de l'ArrayList des Chansons
-  //  * @return renvoi l'ArrayList des Chansons
-  //  */
-  // public ArrayList<Chanson> getEnsemble(){
-  //   return Ensemble;
-  // }
-  //
-  // /**
-  //  * Accès d'une chansons de l'ArrayList des Chansons
-  //  * @param  number Numéro de la chanson à récupérer
-  //  * @return        Chanson selectionnée
-  //  */
-  // public Chanson get(int number){
-  //   if(number>=0&&number<=Ensemble.size()){
-  //     return Ensemble.get(number);
-  //   }
-  //   return Ensemble.get(0);
-  // }
+  /**
+   * Ajout d'une chanson dans la liste des chansons
+   * @param nouveau Chanson à ajouter
+   */
+   public void add(Stockage nouveau){
+     Ensemble.add(nouveau);
+   }
+
+   /**
+    * Accesseur de la liste
+    * @return ArrayList des Elements stockées sans traitement
+    */
+   public ArrayList<Stockage> getEnsemble(){
+     return Ensemble;
+   }
+
+   /**
+    * Obtention d'un element de la liste
+    * @param  number Numero de l'element à obtenir
+    * @return        Element obtenu
+    */
+  public Stockage get(int number){
+
+    //Verification de l'accessibilité de l'element
+    if(number>=0&&number<=Ensemble.size()){
+      return Ensemble.get(number);
+    }
+    return Ensemble.get(0);
+  }
+
+  /**
+   * Tri de la liste de la manière voulu
+   * @param  Choix Choix du mode de triage
+   * @return       String contenant la liste formaté
+   */
+  public String Tri(int Choix){
+    if(Choix==0){
+      String s="";
+      for (Stockage Actuel : Ensemble) {
+        s+=Actuel;
+      }
+      return s;
+    }else{
+      return null;
+    }
+  }
+
+  /**
+   * Transforme l'objet actuel en un Element
+   * @param  document Document auquel rataché l'Element
+   * @return          Element formaté d'apres les valeurs contenu dans l'objet
+   */
+
+  public Element getElement(Document document){
+   Element client = document.createElement("Playlist");
+
+     Element Liste = document.createElement("Chanson");
+
+     /**
+      * Ajout de tout les element de la liste
+      */
+     for (Stockage Actuel : Ensemble ) {
+       Liste.appendChild(Actuel.getElement(document));
+     }
+     client.appendChild(Liste);
+
+     return client;
+  }
 }

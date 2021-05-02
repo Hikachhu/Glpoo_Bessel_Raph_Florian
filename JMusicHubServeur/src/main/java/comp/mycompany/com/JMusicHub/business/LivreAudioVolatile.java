@@ -7,28 +7,49 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 import java.io.*;
 
-public class LivreAudioVolatile extends StockageVolatile implements Serializable{
-  // public ArrayList<LivreAudio> Ensemble = new ArrayList<LivreAudio>();
+import javax.xml.parsers.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.xml.sax.SAXException;
 
-  public void addUser(){
-    Scanner clavier = new Scanner(System.in);
-    System.out.println("Entrez le Titre:");
-    String Titre=clavier.nextLine();
-    System.out.println("Entrez la Duree:");
-    int Duree=clavier.nextInt();
-    System.out.println("Entrez l'auteur :");
-    clavier.nextLine();
-    String Auteur=clavier.nextLine();
-    System.out.println("Entrez le Contenu:");
-    String Contenu=clavier.nextLine();
-    System.out.println("Entrez la langue:(Veillez entrer le numero du genre voulu)"+Langues.allLangues());
-    int langue=clavier.nextInt();
-    System.out.println("Entrez la categorie :(Veillez entrer le numero du genre voulu)"+Categorie.allCategorie());
-    int categorie=clavier.nextInt();
+import org.w3c.dom.*;
+import java.io.IOException;
+import java.io.*;
 
-    LivreAudio nouveau =  new LivreAudio(Titre,Duree,Ensemble.size()+1,Auteur,Contenu,langue,categorie);
-    Ensemble.add(nouveau);
-  }
+/**
+ * Classe manipulant une liste de LivresAudios
+ */
+public class LivreAudioVolatile  implements StockageVolatile, Serializable{
+  public ArrayList<Stockage> Ensemble = new ArrayList<Stockage>();
+
+    /**
+     * Ajout d'un element dans la liste des stockages
+     * @param nouveau Information à ajouter
+     */
+     public void add(Stockage nouveau){
+       Ensemble.add(nouveau);
+     }
+
+     /**
+      * Accesseur de la liste des elements
+      * @return la liste sans modification
+      */
+     public ArrayList<Stockage> getEnsemble(){
+       return Ensemble;
+     }
+
+     /**
+      * Accesseur d'un element specifique
+      * @param  number Numero de l'element à obtenir
+      * @return        Element selectionné
+      */
+    public Stockage get(int number){
+      if(number>=0&&number<=Ensemble.size()){
+        return Ensemble.get(number);
+      }
+      return Ensemble.get(0);
+    }
 
   public String toString(){
     String s="";
@@ -38,6 +59,11 @@ public class LivreAudioVolatile extends StockageVolatile implements Serializable
     return s;
   }
 
+  /**
+   * Tri de la liste de la manière voulu
+   * @param  Choix Choix du mode de triage
+   * @return       String contenant la liste formaté
+   */
   public String Tri(int Choix){
     if(Choix==0){
       ArrayList<Stockage> Init= new ArrayList<Stockage>(Ensemble);
@@ -54,6 +80,24 @@ public class LivreAudioVolatile extends StockageVolatile implements Serializable
     }else{
       return "ERROR";
     }
+  }
+  
+  /**
+   * Transforme l'objet actuel en un Element
+   * @param  document Document auquel rataché l'Element
+   * @return          Element formaté d'apres les valeurs contenu dans l'objet
+   */
+  public Element getElement(Document document){
+   Element client = document.createElement("Playlist");
+
+     Element Liste = document.createElement("ListeAudios");
+
+     for (Stockage Actuel : Ensemble ) {
+       Liste.appendChild(Actuel.getElement(document));
+     }
+     client.appendChild(Liste);
+
+     return client;
   }
 
 }

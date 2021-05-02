@@ -20,9 +20,15 @@ import java.io.IOException;
 import java.io.File;
 import java.util.UUID;
 
-
+/**
+ * Classe ecrivant/lisant les informations d'une liste de Playlist dans un fichier XML
+ */
 public class WritePlaylistVolatile extends WriteVolatile{
-
+	/**
+	* Lis une liste de Playlist depuis un fichier passé en parametre
+	* @param  Fichier Fichier contenant la liste des Playlist
+	* @return         Liste lu
+	*/
 	public PlaylistVolatile readXML(String Fichier) {
 		PlaylistVolatile nouvelle = new PlaylistVolatile();
 

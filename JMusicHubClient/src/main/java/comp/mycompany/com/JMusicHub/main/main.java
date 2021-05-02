@@ -10,12 +10,17 @@ import com.sun.jna.platform.win32.WinNT.HANDLE;
 
 import java.util.Scanner;
 
+/**
+ * Class principale permettant de gérer la facade et les informations du client
+ * L'objectif est d'initialiser l'environnement ainsi que transmettre les informations du client vers la facade qui contient toute les instructions
+ */
 class main{
+
   final static Logger logger = Logger.getLogger(main.class);
   public static void main(String[] args) {
 
-    if(System.getProperty("os.name").startsWith("Windows"))
-    {
+    //Initialisation de l'interface pour utiliser les couleurs correctement
+    if(System.getProperty("os.name").startsWith("Windows")){
       logger.info("Initialisation des couleurs");
         // Set output mode to handle virtual terminal sequences
         Function GetStdHandleFunc = Function.getFunction("kernel32", "GetStdHandle");
@@ -35,7 +40,7 @@ class main{
 
     logger.info("Debut du programme");
 
-    //Couleurs
+    //Couleurs utile dans l'affichage
     final String RESET = "\u001B[0m";
     final String BLACK = "\u001B[30m";
     final String RED = "\u001B[31m";
@@ -51,29 +56,21 @@ class main{
     int ChansonNumber;
 
     //Declaration des listes pour stocker les informations
-
-    PlaySound                 Player                  = new PlaySound();
     FacadeMenu                Facade                  =new FacadeMenu();
     Adapter                   adapter                 =new Adapter();
 
     //Lecture des informations
-    MutableInt ChoixClient = MutableInt.getInstance();
+    Mutable ChoixClient = MutableInt.getInstance();
     String tempDir=System.getProperty("java.io.tmpdir");
-    Client client = new Client();
+     InterfaceClient client  = new Client();
 
 
     //Boucle principale pour le menu
     do{
-      System.out.println(c);
-      switch (c) {
-        case 'j':
-          Facade.LectureAudio(tempDir);
-          break;
+      //Selection de la fonction de la facade selon la valeur entrée par l'utilisateur
+      switch (c){
         case 'd':
           Facade.Display();
-          break;
-        case 'c':
-          Facade.AjoutChanson();
           break;
         case 'a':
           Facade.AjoutAlbum();
@@ -81,8 +78,8 @@ class main{
         case '+':
           Facade.AjoutMusiqueDansAlbum();
           break;
-        case 'l':
-          Facade.AjoutLivreAudio();
+        case '_':
+          Facade.SuppressionAlbum();
           break;
         case 'p':
           Facade.CreationPlaylist();
@@ -93,6 +90,9 @@ class main{
         case 'h':
           Facade.Help();
           break;
+        case 'j':
+          Facade.LectureAudio(tempDir);
+          break;
         case 'm':
           Facade.ReceptionClient();
           break;
@@ -101,13 +101,18 @@ class main{
       System.out.println("Entrez une commande");
       System.out.println("h pour obtenir la liste des commandes disponibles");
       try{
+        // Reception du choix sur le client
         c=clavier.next().charAt(0);
-        //                                         1   2   3   4   5   6   7   8   9  10  11  12
-        ChoixClient.setValue(adapter.Conversion(c,'d','c','a','+','l','p','-','s','h','j','q','m'));
+        //Conversion du choix en un int pour l'envoyer apres sur le server
+        //                                         1   2   3   4   5   6   7   8   9   10  11
+        ChoixClient.setValue(adapter.Conversion(c,'d','a','+','_','p','-','s','h','j','m','q'));
+        //Envoi de l'information convertie sur le serveur
         client.EnvoiChoix(ChoixClient);
       }catch (Exception e) {
+        logger.info("Erreur au niveau de la boucle principale",e);
         System.out.println(e.getMessage());
       }
+      //Nous quittons si l'utilisateur entre q
     }while (c!='q');
 
   }

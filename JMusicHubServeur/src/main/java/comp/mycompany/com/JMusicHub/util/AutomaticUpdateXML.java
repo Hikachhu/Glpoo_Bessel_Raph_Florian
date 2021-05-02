@@ -24,7 +24,16 @@ import org.jaudiotagger.tag.TagOptionSingleton;
 import org.jaudiotagger.tag.id3.AbstractID3v2Tag;
 import org.jaudiotagger.tag.id3.ID3v23Tag;
 
+/**
+ * Classe permettant de mettre à jour des fichiers à partir de leurs METADONNEES
+ */
 public class AutomaticUpdateXML{
+  final static Logger logger = Logger.getLogger(AutomaticUpdateXML.class);
+
+  /**
+   * Mise à jour de la liste des Chansons
+   * @return Liste des Chansons crées
+   */
   public static StockageVolatile GetListFileChanson(){
     System.out.println("=================\n");
     FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
@@ -32,40 +41,78 @@ public class AutomaticUpdateXML{
     Chanson lu;
     String Contenu;
     File ListeFichier = new File("Data/Chansons");
-    int Duree,ID=1;
+    int Duree;
+    //Pour tout les fichiers présent dans un dossier
     for (String pathname : ListeFichier.list()){
+      //Creation du chemin vers ce fichier
       Contenu = "Data/Chansons/"+pathname;
       System.out.println("\n"+Contenu);
       try{
+        //Ouverture du fichier dans un objet donné
         AudioFile f = AudioFileIO.read(new File(Contenu));
-        lu=LectureFichierChanson(f,ID,pathname);
-        System.out.println(lu);
+        lu=LectureFichierChanson(f,pathname);
+        //Ajout de la chanson créer dans la liste des chansons
         ListeChanson.add(lu);
       }catch (Exception e) {
-
+        logger.error("Erreur dans la lecture des metadatas d'un fichier:"+e.getMessage());
       }
-      ID++;
     }
     System.out.println(ListeChanson);
     System.out.println("=================\n");
     return ListeChanson;
   }
-  public static Chanson LectureFichierChanson(AudioFile f,int ID,String Contenu) {
+
+  /**
+   * Lecture de METADATA pour un fichier donnée
+   * @param  f       Fichier dont nous cherchons à avoir les métadonnées
+   * @param  Contenu Nom du fichier
+   * @return         Chanson crée à partir des METADATA
+   */
+  public static Chanson LectureFichierChanson(AudioFile f,String Contenu) {
     WavTag  tag = (WavTag) f.getTag();
+
+    //Recuperation de la METADATA concernant l'artiste
     String Artiste=tag.getFirst(FieldKey.ARTIST);
+    if(Artiste=="")Artiste="INCONNU";
+
+    //Recuperation de la METADATA concernant l'album
     String Album=tag.getFirst(FieldKey.ALBUM);
+    if(Album=="")Album="INCONNU";
+
+    //Recuperation de la METADATA concernant le titre
     String Titre=tag.getFirst(FieldKey.TITLE);
+    if(Titre=="")Titre="INCONNU";
+
+    //Recuperation de la METADATA concernant un commentaire
     String Commentaire=tag.getFirst(FieldKey.COMMENT);
+    if(Commentaire=="")Commentaire="INCONNU";
+
+    //Recuperation de la METADATA concernant l'année
     String Annee=tag.getFirst(FieldKey.YEAR);
-    String Track=tag.getFirst(FieldKey.TRACK);
+    if(Annee=="")Annee="INCONNU";
+
+    //Recuperation de la METADATA concernant l'id du fichier
+    int ID=Integer.parseInt(tag.getFirst(FieldKey.TRACK));
     String genre = tag.getFirst(FieldKey.GENRE);
+
+    //Recuperation de la METADATA concernant la durée
     int Duree=f.getAudioHeader().getTrackLength();
-    int genreEnregistrer=Genre.valueOf(genre).ordinal();
+    int genreEnregistrer=Genre.valueOf("INCONNU").ordinal();
+    try{
+      genreEnregistrer=Genre.valueOf(genre).ordinal();
+    }catch (Exception e) {
+      logger.error("Echec dans la modification du genre");
+    }
+
+    //Creation dune chanson selon les parametre lu
     Chanson lu = new Chanson(Titre,Duree,ID,Artiste,Contenu,genreEnregistrer);
     return lu;
   }
 
-
+  /**
+   * Mise à jour de la liste des LivresAudios
+   * @return Liste des LivresAudios crées
+   */
   public static StockageVolatile GetListFileLivresAudios(){
     System.out.println("=================\n");
     FactoryOfStockageVolatile FactoryStockageVolatile = new FactoryOfStockageVolatile();
@@ -73,36 +120,66 @@ public class AutomaticUpdateXML{
     LivreAudio lu;
     String Contenu;
     File ListeFichier = new File("Data/LivresAudios");
-    int Duree,ID=1;
+    int Duree;
+    //Pour tout les fichiers présent dans un dossier
     for (String pathname : ListeFichier.list()){
+      //Creation du chemin vers ce fichier
       Contenu = "Data/LivresAudios/"+pathname;
       System.out.println("\n"+Contenu);
       try{
+        //Ouverture du fichier dans un objet donné
         AudioFile f = AudioFileIO.read(new File(Contenu));
-        lu=LectureFichierLivreAudio(f,ID,pathname);
-        System.out.println("lu ="+lu);
+        lu=LectureFichierLivreAudio(f,pathname);
+        //Ajout de la chanson créer dans la liste des chansons
         ListeLivreAudio.add(lu);
       }catch (Exception e) {
-        System.out.println("JEHRBGAHEBLZEHBZELHGZELJGZELJZEL"+e.getMessage());
+        logger.error("Erreur dans la lecture des metadatas d'un fichier:"+e.getMessage());
       }
-      ID++;
     }
     System.out.println(ListeLivreAudio);
     System.out.println("=================\n");
     return ListeLivreAudio;
   }
 
-  public static LivreAudio LectureFichierLivreAudio(AudioFile f,int ID,String Contenu) {
+  /**
+   * Lecture de METADATA pour un fichier donnée
+   * @param  f       Fichier dont nous cherchons à avoir les métadonnées
+   * @param  Contenu Nom du fichier
+   * @return         LivreAudio crée à partir des METADATA
+   */
+  public static LivreAudio LectureFichierLivreAudio(AudioFile f,String Contenu) {
     WavTag  tag = (WavTag) f.getTag();
+
+    //Recuperation de la METADATA concernant l'artiste
     String Artiste=tag.getFirst(FieldKey.ARTIST);
+    if(Artiste=="")Artiste="INCONNU";
+
+    //Recuperation de la METADATA concernant un album
     String Album=tag.getFirst(FieldKey.ALBUM);
+    if(Album=="")Album="INCONNU";
+
+    //Recuperation de la METADATA concernant un titre
     String Titre=tag.getFirst(FieldKey.TITLE);
+    if(Titre=="")Titre="INCONNU";
+
+    //Recuperation de la METADATA concernant le commentaire
     String Commentaire=tag.getFirst(FieldKey.COMMENT);
+    if(Commentaire=="")Commentaire="INCONNU";
+
+    //Recuperation de la METADATA concernant l'année
     String Annee=tag.getFirst(FieldKey.YEAR);
-    String Track=tag.getFirst(FieldKey.TRACK);
+    if(Annee=="")Annee="INCONNU";
+
+    //Recuperation de la METADATA concernant son ID
+    int ID=0;
+    try{
+      ID=Integer.parseInt(tag.getFirst(FieldKey.TRACK));
+    }catch (Exception e) {
+    }
     String langue = tag.getFirst(FieldKey.LANGUAGE);
-    System.out.println(langue);
+    if(langue=="")langue="INCONNU";
     String categorie = tag.getFirst(FieldKey.GENRE);
+    if(categorie=="")categorie="INCONNU";
     int Duree=f.getAudioHeader().getTrackLength();
     int langueEnregistrer;
     int categorieEnregistrer;
@@ -112,11 +189,12 @@ public class AutomaticUpdateXML{
        langueEnregistrer=Langues.valueOf("INCONNU").ordinal();
     }
     try {
-       categorieEnregistrer=Categorie.valueOf(categorie).ordinal();
+      categorieEnregistrer=Categorie.valueOf(categorie).ordinal();
     }catch (Exception e) {
        categorieEnregistrer=Categorie.valueOf("INCONNU").ordinal();
     }
 
+    //Creation d'un livre audio selon les parametre lu
     LivreAudio lu = new LivreAudio(Titre,Duree,ID,Artiste,Contenu,langueEnregistrer,categorieEnregistrer);
     return lu;
   }

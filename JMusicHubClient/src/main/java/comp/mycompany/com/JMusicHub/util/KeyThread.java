@@ -16,25 +16,36 @@ import org.apache.log4j.Logger;
 import java.util.Scanner;
 
 
-
+/**
+ * Thread utiliser pour modifier la valeur d'une classe qui sera mise à jour par des entrées utilisateurs
+ */
 class KeyThread implements Runnable {
-  final static Logger logger = Logger.getLogger(KeyThread.class);
+   final static Logger logger = Logger.getLogger(KeyThread.class);
    private Thread t;
    Scanner scanner = new Scanner(System.in);
-   MutableInt ReadBytes;
+   Mutable ReadBytes;
 
-   KeyThread(MutableInt ReadBytes) {
+   KeyThread(Mutable ReadBytes) {
+     /**
+      * Synchronisation de la classe permettant de faire transmettre les informations entre le Thread et la fonction appellante
+      */
       this.ReadBytes=ReadBytes;
-      System.out.println("Creating thread");
+      System.out.println("Creation du thread");
    }
 
+   /**
+    * Execution du Thread
+    */
    public void run() {
      try{
-        System.out.println("Running "  );
+        System.out.println("Lecture des entrées utilisateurs activé");
         int c;
         do{
-          c=scanner.next().charAt(0);;
-
+          c=scanner.next().charAt(0);
+          /**
+           * Conversion de l'entrée utilisateur en une valeur placé dans la transmission avec la fonction appellante
+           * @param c Entrée utilisateur
+           */
           switch (c) {
             case 'p':
               System.out.println("Pause");
@@ -57,7 +68,11 @@ class KeyThread implements Runnable {
               break;
           }
         }while(c!='q'&&c!='m');
+        /**
+         * Positionnement de la variable mutable pour ne pas interférer avec le reste du programme
+         */
         ReadBytes.setValue(-2);
+        //Arret du thread
         t.interrupt();
         if(c=='q'){
           logger.info("Sortie programme apres ecoute de musique");
@@ -72,7 +87,6 @@ class KeyThread implements Runnable {
    }
 
    public void start () {
-      System.out.println("Starting");
       logger.info("Debut Thread");
       if (t == null) {
          t = new Thread (this);
