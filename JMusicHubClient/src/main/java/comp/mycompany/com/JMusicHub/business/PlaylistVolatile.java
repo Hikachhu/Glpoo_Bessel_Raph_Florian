@@ -176,13 +176,15 @@ public class PlaylistVolatile implements StockageMaster, Serializable{
 
 
   /**
-   * Creer un String contenant l'ensemble des chansons avec les informations sur l'album au début
+   * Creer un String contenant l'ensemble des chansons avec les informations sur la playlist au début
    * @return Renvoi la chaine de caractere
    */
   public String toString(){
     String s="";
+    int i=0;
     for (StockageVolatile Courant : Ensemble ) {
-      s+=(Courant+"\n");
+      s+=("Numero :"+i+" | "+Courant+"\n");
+      i++;
     }
     return s;
   }

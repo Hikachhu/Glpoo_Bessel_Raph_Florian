@@ -120,10 +120,12 @@ public class FacadeMenu{
     }catch (Exception e) {
       logger.error("Erreur dans l'envoi des informations pour l'ajout de musique à un album",e);
     }
+    ReceptionClient();
   }
 
   public void SuppressionAlbum(){
     ListeAlbum.Suppression();
+    ReceptionClient();
   }
 
   /**
@@ -150,17 +152,17 @@ public class FacadeMenu{
    */
   public void Help(){
     System.out.println(PURPLE+"Commandes disponibles"+RESET);
-    System.out.println("« d » : Affiche toutes les listes");
-    System.out.println("« a » : rajout d’un nouvel album");
-    System.out.println("« + » : rajout d’une chanson existante à un album");
-    System.out.println("« _ » : suppression d’un Album");
-    System.out.println("« p » : creation d’une nouvelle playlist à partir de chansons et livres audio existants");
-    System.out.println("« - » : suppression d’une Playlist");
-    System.out.println("« s » : sauvegarde des playlists, des albums, des chansons et des livres audios dans les fichiers xml respectifs");
-    System.out.println("« h » : aide avec les détails des commandes précédentes");
-    System.out.println("« j » : Mode Player");
-    System.out.println("« m » : Synchronisation avec le serveur");
-    System.out.println("« q » : quitte le programme");
+    System.out.println("d : Affiche toutes les listes");
+    System.out.println("a : rajout d'un nouvel album");
+    System.out.println("+ : rajout d'une chanson existante à un album");
+    System.out.println("_ : suppression d'un Album");
+    System.out.println("p : creation d'une nouvelle playlist à partir de chansons et livres audio existants");
+    System.out.println("- : suppression d'une Playlist");
+    System.out.println("s : sauvegarde des playlists, des albums, des chansons et des livres audios dans les fichiers xml respectifs");
+    System.out.println("h : aide avec les détails des commandes précédentes");
+    System.out.println("j : Mode Player");
+    System.out.println("m : Synchronisation avec le serveur");
+    System.out.println("q : quitte le programme");
   }
 
   /**
@@ -168,6 +170,7 @@ public class FacadeMenu{
    */
   public void CreationPlaylist(){
     ListePlaylist.addUser(ListeLivreAudio,ListeChanson);
+    ReceptionClient();
   }
 
   /**
@@ -175,6 +178,7 @@ public class FacadeMenu{
    */
   public void AjoutAlbum(){
     ListeAlbum.addUser();
+    ReceptionClient();
   }
 
   /**
@@ -182,6 +186,7 @@ public class FacadeMenu{
    */
   public void SuppressionPlaylist(){
     if (ListePlaylist.getEnsemble().size()!=0)ListePlaylist.Suppression();
+    ReceptionClient();
   }
 
   /**
@@ -302,8 +307,8 @@ public class FacadeMenu{
 
   /**
    * Permet de demander et vérifier les informations fournis par un utilisateurs sur la lecture d'une donnée
-   * @param tempDir    Localisation du fichier à lire
-   * @param AConfirmer Liste parmis laquel l'utilisateur doit faire une selection
+   * @param tempDir       Localisation du fichier à lire
+   * @param ListeChanson  Liste parmis laquel l'utilisateur doit faire une selection
    */
   public void ConfirmationChoixLecture(String tempDir,StockageVolatile ListeChanson){
     String Ajouer="";

@@ -1,19 +1,14 @@
-02-05-2021 15:15:50:328	 type: INFO  	                      main: 35 -	 message: Debut du programme
-02-05-2021 15:15:50:335	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:15:50:336	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:15:50:337	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
-02-05-2021 15:15:50:337	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
-02-05-2021 15:15:50:405	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:15:50:797	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:15:50:875	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:15:50:875	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:15:50:875	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
-02-05-2021 15:15:50:876	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
-02-05-2021 15:15:50:879	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:15:51:024	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:16:02:640	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:10
-02-05-2021 15:16:02:647	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:16:02:837	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:16:14:827	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
-02-05-2021 15:16:14:851	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:16:15:045	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 14:37:20:635	 type: INFO  	                      main: 35 -	 message: Debut du programme
+03-05-2021 14:37:20:665	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 14:37:20:668	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 14:37:20:670	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+03-05-2021 14:37:20:672	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+03-05-2021 14:37:20:887	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 14:37:21:593	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 14:37:21:705	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 14:37:21:706	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 14:37:21:706	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+03-05-2021 14:37:21:707	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+03-05-2021 14:37:21:720	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 14:37:21:836	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 14:40:27:968	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:11

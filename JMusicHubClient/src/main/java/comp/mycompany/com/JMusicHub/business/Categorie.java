@@ -7,7 +7,7 @@ public enum Categorie{
   public static String allCategorie(){
     String s="";
     for (Categorie a : Categorie.values()) {
-      s+=a.ordinal()+" "+a+"\n";
+      s+=(a.ordinal()+" "+a+"\n");
     }
     return s;
   }

@@ -4,13 +4,14 @@
  
   <groupId>com.mycompany.app</groupId>
   <artifactId>JMusicHub</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>Final</version>
   <name>JMusicHub</name>
   <description>JMusicHub Project</description>
  
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
     <java.version>1.8</java.version>
     <start-class>comp.mycompany.com.JMusicHub.main.main</start-class>
     <project.build.sourceencoding>UTF-8</project.build.sourceencoding>
@@ -135,7 +136,6 @@
         </execution>
       </executions>
     </plugin>
-    <!--
 	<plugin>
           <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>			
@@ -152,14 +152,14 @@
                     <phase>package</phase>
                 </execution>
             </executions>
-    </plugin> -->
+    </plugin> 
   </plugins>
 </build>
 
   <reporting>
     <excludeDefaults>true</excludeDefaults>
     <plugins>
-      <!--<plugin>	
+		<plugin>	
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>			
 		<configuration>
@@ -174,7 +174,7 @@
             </reports>
           </reportSet>
         </reportSets>
-      </plugin>-->
+      </plugin>
 	  
     </plugins>
   </reporting>

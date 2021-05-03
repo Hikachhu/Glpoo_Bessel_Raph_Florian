@@ -2,8 +2,12 @@
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/AlbumTest.java
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/LivreAudioTest.java
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/PlaylistTest.java
-/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/ChansonTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/StockageTest.java
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/AlbumVolatileTest.java
-/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/MutableIntTest.java
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/PlaylistVolatileTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/AdapterTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/FactoryTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/EnumTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/ChansonTest.java
+/mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/MutableIntTest.java
 /mnt/c/Users/Flor1/OneDrive/Documents/3A/S2/ProjetMusicub/JMusicHubClient/src/test/java/comp/mycompany/com/JMusicHub/business/LivreAudioVolatileTest.java

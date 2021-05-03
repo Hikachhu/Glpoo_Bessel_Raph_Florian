@@ -105,14 +105,6 @@ public class AlbumVolatile implements StockageMaster, Serializable{
              s+="\t"+album+"\n";
            }
            return s;
-         case 1:
-           for (StockageVolatile album: init){
-             ((Album)album).TriAlbum();
-           }
-           for (StockageVolatile album : init) {
-             s+="\t"+album+"\n";
-           }
-           return s;
          default:
            return "ERROR";
          }
@@ -173,11 +165,13 @@ public class AlbumVolatile implements StockageMaster, Serializable{
        }
 
 
-    public String toString(){
-      String s="";
-      for (StockageVolatile Courant : Ensemble ) {
-        s+=(Courant+"\n");
-      }
-      return s;
-    }
+       public String toString(){
+        String s="";
+        int i=0;
+        for (StockageVolatile Courant : Ensemble ) {
+          s+=("Numero :"+i+" | "+Courant+"\n");
+          i++;
+        }
+        return s;
+       }
 }

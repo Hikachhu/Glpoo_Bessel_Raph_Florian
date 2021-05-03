@@ -78,7 +78,7 @@ public class ChansonVolatile implements StockageVolatile, Serializable{
       }
       return s;
     }else{
-      return null;
+      return "ERROR";
     }
   }
 

@@ -258,7 +258,6 @@ public class Client implements InterfaceClient{
       //write to socket using ObjectOutputStream
       oos = new ObjectOutputStream(socket.getOutputStream());
       //write to socket using ObjectOutputStream
-      System.out.println("Envoi de "+Choix.getValue());
       oos.writeObject(Choix.getValue());
       //close resources
       oos.close();
@@ -281,7 +280,6 @@ public class Client implements InterfaceClient{
       //establish socket connection to server
       socket = new Socket(host.getHostName(), 9876);
       //write to socket using ObjectOutputStream
-      System.out.println("Envoi de "+Aenvoyer);
       oos = new ObjectOutputStream(socket.getOutputStream());
       //write to socket using ObjectOutputStream
       oos.writeObject(Aenvoyer);

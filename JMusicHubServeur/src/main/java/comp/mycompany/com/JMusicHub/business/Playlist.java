@@ -52,10 +52,12 @@ public class Playlist implements StockageVolatile, Listing,Serializable{
   /**
    * Affiche l'ensemble des LivreAudio et Chansons stockées
    */
-  public void Affiche(){
+  public String Affiche(){
+    String s="";
     for (Stockage Courant : Ensemble ) {
-      System.out.println(Courant);
+      s+=(Courant);
     }
+    return s;
   }
 
   /**
@@ -118,14 +120,14 @@ public class Playlist implements StockageVolatile, Listing,Serializable{
         * @param  number Numero de l'element à obtenir
         * @return        Element selectionné
         */
-  public Stockage get(int Numero){
-    return Ensemble.get(Numero);
+  public Stockage get(int number){
+    return Ensemble.get(number);
   }
 
 
     /**
      * Tri de la liste de la manière voulu
-     * @param  Choix Choix du mode de triage
+     * @param  Selection Choix du mode de triage
      * @return       String contenant la liste formaté
      */
   public String Tri(int Selection){

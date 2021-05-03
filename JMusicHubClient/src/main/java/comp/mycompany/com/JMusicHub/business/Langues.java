@@ -8,9 +8,8 @@ public enum Langues{
   public static String allLangues(){
     String s="";
     for (Langues a : Langues.values()) {
-      s+=a.ordinal()+" "+a+"\n";
+      s+=(a.ordinal()+" "+a+"\n");
     }
     return s;
   }
-
 }

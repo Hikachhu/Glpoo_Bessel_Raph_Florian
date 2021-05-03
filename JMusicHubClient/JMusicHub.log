@@ -1,50 +1,6 @@
-02-05-2021 15:16:01:531	 type: INFO  	                      main: line  24 -	 message: Initialisation des couleurs
-02-05-2021 15:16:01:641	 type: INFO  	                      main: line  41 -	 message: Debut du programme
-02-05-2021 15:16:01:650	 type: INFO  	 FactoryOfStockageVolatile: line  20 -	 message: Creation d'une liste de chanson
-02-05-2021 15:16:01:651	 type: INFO  	 FactoryOfStockageVolatile: line  23 -	 message: Creation d'une liste de LivreAudio
-02-05-2021 15:16:01:652	 type: INFO  	   FactoryOfStockageMaster: line  20 -	 message: Creation d'une liste d'album
-02-05-2021 15:16:01:654	 type: INFO  	   FactoryOfStockageMaster: line  23 -	 message: Creation d'une liste de Playlist
-02-05-2021 15:16:02:587	 type: INFO  	                   Adapter: line  20 -	 message: Conversion de m parmis [C@6cc4c815
-02-05-2021 15:16:02:587	 type: INFO  	                   Adapter: line  23 -	 message: Conversion en 10
-02-05-2021 15:16:02:588	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur à:10
-02-05-2021 15:16:03:396	 type: INFO  	                FacadeMenu: line  65 -	 message: Liste chanson = 	Titre =Britney Spears - ...Baby One More Time (Official Video) | Duree =3m57s | ID= 1 | Artiste = Britney Spears | Contenu = Britney Spears - ...Baby One More Time (Official Video).wav | genre = Pop
-	Titre =Céline Dion - Pour que tu m'aimes encore (Clip officiel) | Duree =4m10s | ID= 2 | Artiste = Céline Dion | Contenu = Céline Dion - Pour que tu m'aimes encore (Clip officiel).wav | genre = Classique
-	Titre =IAM - Je danse le Mia (Clip officiel) | Duree =4m1s | ID= 3 | Artiste = IAM | Contenu = IAM - Je danse le Mia (Clip officiel).wav | genre = Rap
-	Titre =Jean-Jacques Goldman - On ira (Clip officiel) | Duree =4m23s | ID= 4 | Artiste = Jean-Jacques Goldman | Contenu = Jean-Jacques Goldman - On ira (Clip officiel).wav | genre = Pop
-	Titre =Khaled - Aicha | Duree =4m22s | ID= 5 | Artiste = Khaled | Contenu = Khaled - Aicha.wav | genre = Pop
-	Titre =Ideal paradoxal | Duree =3m53s | ID= 6 | Artiste = INCONNU | Contenu = paradoxal.wav | genre = Pop
-	Titre =Patrick Bruel - Place des grands hommes (Audio) | Duree =4m29s | ID= 7 | Artiste = Patrick Bruel | Contenu = Patrick Bruel - Place des grands hommes (Audio).wav | genre = Classique
-	Titre =Shaggy - Boombastic (Official Music Video) | Duree =3m55s | ID= 8 | Artiste = Shaggy | Contenu = Shaggy - Boombastic (Official Music Video).wav | genre = Jazz
-	Titre =Spice Girls - Wannabe | Duree =3m56s | ID= 9 | Artiste = Spice Girls | Contenu = Spice Girls - Wannabe.wav | genre = Pop
-	Titre =Chacun sa Route (Clip Officiel) | Duree =2m44s | ID= 10 | Artiste = Tonton David, Geoffrey Oryema, Manu Katché | Contenu = Tonton David _ Geoffrey Oryema _ Manu Katche (KOD) - Chacun sa Route (Clip Officiel).wav | genre = Jazz
-	Titre =Vanessa Paradis - Tandem | Duree =3m24s | ID= 11 | Artiste = Vanessa Paradis | Contenu = Vanessa Paradis - Tandem.wav | genre = Classique
-	Titre =Zebda - Tomber La Chemise | Duree =4m22s | ID= 12 | Artiste = Zebda | Contenu = Zebda - Tomber La Chemise.wav | genre = Jazz
-
-02-05-2021 15:16:03:521	 type: INFO  	                FacadeMenu: line  70 -	 message: Liste LivreAudio = Titre=Louise Attaque - J't'emmène au vent (Clip Officiel remasterisé) Duree=3m4s ID=13 Auteur=Louise Attaque Contenu=Louise Attaque - J't'emmene au vent (Clip Officiel remasterise).wav langue=INCONNU categorie=INCONNU
-Titre=Lou Bega - Mambo No. 5 (A Little Bit of...) (Official Video) Duree=3m41s ID=14 Auteur=Lou Bega Contenu=Mambo No. 5 (A Little Bit of...) (Official Video).wav langue=INCONNU categorie=INCONNU
-Titre=Manau - La tribu de Dana (Clip Officiel remasterisé) Duree=3m46s ID=15 Auteur=Manau Contenu=Manau - La tribu de Dana (Clip Officiel remasterise).wav langue=INCONNU categorie=INCONNU
-Titre=Matmatah - Lambé An Dro (clip officiel) Duree=3m40s ID=16 Auteur=Matmatah Contenu=Matmatah - Lambe An Dro (clip officiel).wav langue=INCONNU categorie=INCONNU
-Titre=Noir Désir - L'homme pressé (Clip Officiel restauré HD) Duree=3m44s ID=17 Auteur=Noir Désir Contenu=Noir Desir - L'homme presse (Clip Officiel restaure HD).wav langue=INCONNU categorie=INCONNU
-
-02-05-2021 15:16:03:643	 type: INFO  	                FacadeMenu: line  75 -	 message: ListeAlbum = Album: 123 ID: 0 Artiste: 123 DateSortie: 123 Duree: 2m3s
-
-Album: Nouvel Album ID: 1 Artiste: Florian Morin DateSortie: 2000 Duree: 2m3s
-		Titre =IAM - Je danse le Mia (Clip officiel) | Duree =4m1s | ID= 2 | Artiste = IAM | Contenu = IAM - Je danse le Mia (Clip officiel).wav | genre = Rap
-
-Album: Testfinal ID: 2 Artiste: Florian Morin DateSortie: 2020 Duree: 2m3s
-
-
-02-05-2021 15:16:03:783	 type: INFO  	                FacadeMenu: line  80 -	 message: ListePlaylist = Nom: Playlist Raphael ID: 1
-
-Nom: Test ID: 2
-
-Nom: TestClient ID: 3
-		Titre =Zebda - Tomber La Chemise | Duree =4m22s | ID= 11 | Artiste = Zebda | Contenu = Zebda - Tomber La Chemise.wav | genre = Jazz
-		Titre =Céline Dion - Pour que tu m'aimes encore (Clip officiel) | Duree =4m10s | ID= 1 | Artiste = Céline Dion | Contenu = Céline Dion - Pour que tu m'aimes encore (Clip officiel).wav | genre = Classique
-		Titre =Jean-Jacques Goldman - On ira (Clip officiel) | Duree =4m23s | ID= 3 | Artiste = Jean-Jacques Goldman | Contenu = Jean-Jacques Goldman - On ira (Clip officiel).wav | genre = Pop
-
-
-02-05-2021 15:16:14:821	 type: INFO  	                   Adapter: line  20 -	 message: Conversion de d parmis [C@56235b8e
-02-05-2021 15:16:14:821	 type: INFO  	                   Adapter: line  23 -	 message: Conversion en 1
-02-05-2021 15:16:14:821	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur à:1
-02-05-2021 15:16:14:937	 type: INFO  	                FacadeMenu: line 134 -	 message: Affichage liste musique
+03-05-2021 15:40:33:436	 type: INFO  	                      main: line  24 -	 message: Initialisation des couleurs
+03-05-2021 15:40:33:665	 type: INFO  	                      main: line  41 -	 message: Debut du programme
+03-05-2021 15:40:33:683	 type: INFO  	 FactoryOfStockageVolatile: line  20 -	 message: Creation d'une liste de chanson
+03-05-2021 15:40:33:683	 type: INFO  	 FactoryOfStockageVolatile: line  23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 15:40:33:683	 type: INFO  	   FactoryOfStockageMaster: line  20 -	 message: Creation d'une liste d'album
+03-05-2021 15:40:33:691	 type: INFO  	   FactoryOfStockageMaster: line  23 -	 message: Creation d'une liste de Playlist

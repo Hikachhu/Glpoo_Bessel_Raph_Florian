@@ -33,7 +33,11 @@ public class PlaylistVolatile implements StockageMaster, Serializable{
       logger.error("Erreur dans la reception d'un choix client pour supprimer la playlist",e);
     }
     Number=ChoixClient.getValue();
-    Ensemble.remove(Number);
+    try{
+      Ensemble.remove(Number);
+    }catch (Exception e) {
+      logger.error("Suppression d'un numero qui n'existe pas");
+    }
   }
 
 

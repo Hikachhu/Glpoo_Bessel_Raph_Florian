@@ -52,10 +52,12 @@ public class Playlist implements StockageVolatile, Listing,Serializable{
   /**
    * Affiche l'ensemble des LivreAudio et Chansons stockées
    */
-  public void Affiche(){
+  public String Affiche(){
+    String s="";
     for (Stockage Courant : Ensemble ) {
-      System.out.println(Courant);
+      s+=(Courant);
     }
+    return s;
   }
 
   /**
@@ -115,7 +117,7 @@ public class Playlist implements StockageVolatile, Listing,Serializable{
 
        /**
         * Accesseur d'un element specifique
-        * @param  number Numero de l'element à obtenir
+        * @param  Numero Numero de l'element à obtenir
         * @return        Element selectionné
         */
   public Stockage get(int Numero){

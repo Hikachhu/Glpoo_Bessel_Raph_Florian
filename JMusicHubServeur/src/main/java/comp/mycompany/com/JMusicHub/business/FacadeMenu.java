@@ -81,9 +81,6 @@ public class FacadeMenu{
       case 7:
         Enregistrement();
         break;
-      case 8:
-        Help();
-        break;
       case 9:
         LectureAudio();
         break;
@@ -94,6 +91,7 @@ public class FacadeMenu{
 
   public void SuppressionAlbum(){
     ListeAlbum.Suppression();
+    EnvoiClient();
   }
 
   /**
@@ -136,6 +134,7 @@ public class FacadeMenu{
    */
   public void CreationPlaylist(){
     ListePlaylist.addUser(ListeLivreAudio,ListeChanson);
+    EnvoiClient();
   }
 
   /**
@@ -144,6 +143,7 @@ public class FacadeMenu{
   public void AjoutAlbum(){
     ListeAlbum.addUser();
     System.out.println(ListeAlbum);
+    EnvoiClient();
   }
 
   /**
@@ -151,6 +151,7 @@ public class FacadeMenu{
    */
   public void SuppressionPlaylist(){
     if (ListePlaylist.getEnsemble().size()!=0)ListePlaylist.Suppression();
+    EnvoiClient();
   }
 
   /**
@@ -165,24 +166,6 @@ public class FacadeMenu{
     FichierAlbums.writeXML("files/Albums.xml",ListeAlbum);
     FichierLivreAudio.writeXML("files/Element.xml",ListeLivreAudio);
     FichierPlaylist.writeXML("files/Playlist.xml",ListePlaylist);
-  }
-
-  /**
-   * Affiche les informations relative aux commandes disponible
-   */
-  public void Help(){
-    System.out.println(PURPLE+"Commandes disponibles"+RESET);
-    System.out.println("« j » : Mode Player");
-    System.out.println("« d » : Affiche toutes les listes");
-    System.out.println("« a » : rajout d’un nouvel album");
-    System.out.println("« + » : rajout d’une chanson existante à un album");
-    System.out.println("« p » : creation d’une nouvelle playlist à partir de chansons et livres audio existants");
-    System.out.println("« - » : suppression d’une Playlist");
-    System.out.println("« _ » : suppression d’un Album");
-    System.out.println("« s » : sauvegarde des playlists, des albums, des chansons et des livres audios dans les fichiers xml respectifs");
-    System.out.println("« h » : aide avec les détails des commandes précédentes");
-    System.out.println("« m » : Synchronisation avec le serveur");
-    System.out.println("« q » : quitte le programme");
   }
 
   /**

@@ -7,11 +7,11 @@ public class PlaylistVolatileTest{
   @Test
   public void Test1(){
     PlaylistVolatile VolatileTest = new PlaylistVolatile();
-    Playlist test1 = new Playlist("Nom",1);
+    StockageVolatile test1 = new Playlist("Nom",1);
     Chanson ChansonTest1 = new Chanson("Titre",180,1,"Artiste","Contenu.wav",1);
     test1.add(ChansonTest1);
     VolatileTest.add(test1);
-    Playlist test2 = new Playlist("Nom2",2);
+    StockageVolatile test2 = new Playlist("Nom2",2);
     Chanson ChansonTest2 = new Chanson("Titre2",180,1,"Artiste2","Contenu2.wav",1);
     test2.add(ChansonTest2);
     VolatileTest.add(test2);

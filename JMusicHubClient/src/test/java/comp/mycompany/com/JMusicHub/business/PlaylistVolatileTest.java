@@ -15,6 +15,6 @@ public class PlaylistVolatileTest{
     Chanson ChansonTest2 = new Chanson("Titre2",180,1,"Artiste2","Contenu2.wav",1);
     test2.add(ChansonTest2);
     VolatileTest.add(test2);
-    Assertions.assertEquals("Nom: Nom ID: 1\n\t\tTitre =Titre | Duree =3m0s | ID= 1 | Artiste = Artiste | Contenu = Contenu.wav | genre = Classique\n\nNom: Nom2 ID: 2\n\t\tTitre =Titre2 | Duree =3m0s | ID= 1 | Artiste = Artiste2 | Contenu = Contenu2.wav | genre = Classique\n\n",VolatileTest.toString());
+    Assertions.assertEquals("Numero :0 | Nom: Nom ID: 1\n\t\tTitre =Titre | Duree =3m0s | ID= 1 | Artiste = Artiste | Contenu = Contenu.wav | genre = Classique\n\nNumero :1 | Nom: Nom2 ID: 2\n\t\tTitre =Titre2 | Duree =3m0s | ID= 1 | Artiste = Artiste2 | Contenu = Contenu2.wav | genre = Classique\n\n",VolatileTest.toString());
   }
 }
