@@ -1,14 +1,34 @@
-03-05-2021 14:37:20:635	 type: INFO  	                      main: 35 -	 message: Debut du programme
-03-05-2021 14:37:20:665	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-03-05-2021 14:37:20:668	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-03-05-2021 14:37:20:670	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
-03-05-2021 14:37:20:672	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
-03-05-2021 14:37:20:887	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-03-05-2021 14:37:21:593	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-03-05-2021 14:37:21:705	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-03-05-2021 14:37:21:706	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-03-05-2021 14:37:21:706	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
-03-05-2021 14:37:21:707	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
-03-05-2021 14:37:21:720	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
-03-05-2021 14:37:21:836	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
-03-05-2021 14:40:27:968	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:11
+03-05-2021 23:46:26:993	 type: INFO  	                      main: 35 -	 message: Debut du programme
+03-05-2021 23:46:27:004	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:46:27:005	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:46:27:006	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+03-05-2021 23:46:27:007	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+03-05-2021 23:46:27:088	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:46:27:383	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:46:27:610	 type: ERROR 	        AutomaticUpdateXML:136 -	 message: Erreur dans la lecture des metadatas d'un fichier:Cannot invoke "org.jaudiotagger.tag.wav.WavTag.getFirst(org.jaudiotagger.tag.FieldKey)" because "tag" is null
+03-05-2021 23:46:27:640	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:46:27:640	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:46:27:640	 type: INFO  	   FactoryOfStockageMaster: 20 -	 message: Creation d'une liste d'album
+03-05-2021 23:46:27:641	 type: INFO  	   FactoryOfStockageMaster: 23 -	 message: Creation d'une liste de Playlist
+03-05-2021 23:46:27:650	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:46:27:734	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:46:27:871	 type: ERROR 	        AutomaticUpdateXML:136 -	 message: Erreur dans la lecture des metadatas d'un fichier:Cannot invoke "org.jaudiotagger.tag.wav.WavTag.getFirst(org.jaudiotagger.tag.FieldKey)" because "tag" is null
+03-05-2021 23:47:19:238	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:10
+03-05-2021 23:47:19:251	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:47:19:302	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:47:19:448	 type: ERROR 	        AutomaticUpdateXML:136 -	 message: Erreur dans la lecture des metadatas d'un fichier:Cannot invoke "org.jaudiotagger.tag.wav.WavTag.getFirst(org.jaudiotagger.tag.FieldKey)" because "tag" is null
+03-05-2021 23:47:21:722	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:9
+03-05-2021 23:47:21:725	 type: INFO  	 FactoryOfStockageVolatile: 20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:47:21:773	 type: INFO  	 FactoryOfStockageVolatile: 23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:47:21:873	 type: ERROR 	        AutomaticUpdateXML:136 -	 message: Erreur dans la lecture des metadatas d'un fichier:Cannot invoke "org.jaudiotagger.tag.wav.WavTag.getFirst(org.jaudiotagger.tag.FieldKey)" because "tag" is null
+03-05-2021 23:47:22:564	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
+03-05-2021 23:47:23:663	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:3
+03-05-2021 23:47:26:246	 type: INFO  	                MutableInt: 34 -	 message: Changement de valeur à:1
+03-05-2021 23:47:26:362	 type: INFO  	                   Serveur: 49 -	 message: Connexion établie
+03-05-2021 23:47:26:362	 type: INFO  	                   Serveur: 53 -	 message: post ouverture myFile
+03-05-2021 23:47:26:400	 type: INFO  	                   Serveur: 57 -	 message: post ouverture mybytearray 50414270
+03-05-2021 23:47:26:401	 type: INFO  	                   Serveur: 61 -	 message: fis
+03-05-2021 23:47:26:401	 type: INFO  	                   Serveur: 63 -	 message: bis
+03-05-2021 23:47:26:464	 type: INFO  	                   Serveur: 67 -	 message: bis read
+03-05-2021 23:47:26:464	 type: INFO  	                   Serveur: 71 -	 message: os  
+03-05-2021 23:47:26:660	 type: INFO  	                   Serveur: 76 -	 message: post os write

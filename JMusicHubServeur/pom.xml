@@ -140,6 +140,12 @@
           <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>			
 			<configuration>
+					   <additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
+		   <additionalJOptions>
+			 <additionalJOption>-Xdoclint:all</additionalJOption>
+			 <additionalJOption>-Xdoclint:-missing</additionalJOption>
+		   </additionalJOptions>
+
 			  <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 			</configuration>
             <version>3.1.1</version>
@@ -163,6 +169,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>			
 		<configuration>
+				   <additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
+		   <additionalJOptions>
+			 <additionalJOption>-Xdoclint:all</additionalJOption>
+			 <additionalJOption>-Xdoclint:-missing</additionalJOption>
+		   </additionalJOptions>
+
 		  <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 		</configuration>
         <version>3.2.0</version>

@@ -127,7 +127,7 @@ public class Playlist implements StockageVolatile, Listing,Serializable{
 
     /**
      * Tri de la liste de la manière voulu
-     * @param  Choix Choix du mode de triage
+     * @param  Selection Choix du mode de triage
      * @return       String contenant la liste formaté
      */
   public String Tri(int Selection){

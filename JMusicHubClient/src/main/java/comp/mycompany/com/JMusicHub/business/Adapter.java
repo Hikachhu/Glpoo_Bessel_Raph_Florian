@@ -11,7 +11,7 @@ public class Adapter{
   /**
    * Converti une entrée pour renvoyer sa position dans la liste
    * @param  c        Parametre dont nous voulons déterminer la position
-   * @param  ...Choix Liste des possibilités parmis lesquelles trouver c
+   * @param  Choix Liste des possibilités parmis lesquelles trouver c
    * @return          Renvoi la position de C dans la liste des choix
    */
   public int Conversion(char c,char ...Choix){

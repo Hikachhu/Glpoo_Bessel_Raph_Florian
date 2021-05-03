@@ -1,0 +1,5 @@
+Dans le projet rendu ici il manque un dossier ESSENTIEL, les datas à savoir les musiques, ce dossier ce trouve sur Github, veillez utilisez la commande suivante afin d'avoir un projet réellement fonctionnel avec toutes les données nécessaire à son fonctionnement:
+
+git clone https://github.com/Hikachhu/Glpoo_Bessel_Raph_Florian
+
+Sans ce dossier le fonctionnement actuel de l'application est impossible il est donc impératif de récupérer le contenu du dossier DATA se trouvant ici: https://github.com/Hikachhu/Glpoo_Bessel_Raph_Florian/tree/main/JMusicHubServeur/Data et nécessaire au fonctionnement du server

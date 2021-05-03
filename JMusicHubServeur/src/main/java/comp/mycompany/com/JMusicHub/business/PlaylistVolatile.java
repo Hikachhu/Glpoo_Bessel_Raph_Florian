@@ -146,7 +146,11 @@ public class PlaylistVolatile implements StockageMaster, Serializable{
    * @return        Renvoi l'album selectionné
    */
   public StockageVolatile get(int number){
-    return Ensemble.get(number);
+    try{
+      return Ensemble.get(number);
+    }catch (Exception e) {
+    }
+    return null;
   }
 
 

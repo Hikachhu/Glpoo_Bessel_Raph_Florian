@@ -127,7 +127,7 @@ public class PlaylistVolatile implements StockageMaster, Serializable{
 
     /**
     * Ajout d'une liste dans la liste des listes
-    * @param nouveau [description]
+    * @param nouveau Element a ajouter
     */
     public void add(StockageVolatile nouveau){
     Ensemble.add(nouveau);

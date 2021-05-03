@@ -54,7 +54,7 @@ public class PlaySound implements InterfaceAudio {
 
   /**
    * Lis un fichier dont la localisation est passée en parametre
-   * @param filename Position d'un fichier
+   * @param strFilename Position d'un fichier
    */
   public void Lecture(String strFilename) {
      InterfaceClient client  = new Client();
@@ -246,8 +246,8 @@ public class PlaySound implements InterfaceAudio {
 
   /**
    * Permet de lire un ensemble de musique stockée dans une liste
-   * @param PlaylistJouer [description]
-   * @param tempDir       [description]
+   * @param PlaylistJouer Stocke d'element à lire
+   * @param tempDir       Localisation des fichiers
    */
   public void LectureListe(StockageVolatile PlaylistJouer,String tempDir){
      InterfaceClient client  = new Client();

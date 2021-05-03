@@ -39,6 +39,7 @@ class KeyThread implements Runnable {
    public void run() {
      try{
         System.out.println("Lecture des entrées utilisateurs activé");
+        System.out.println("Commandes disponibles:\np pour mettre en pause\nr pour reprendre la musique\ne pour accélérer de 30 secs\nz pour reculer de 30 secs\nq pour quitter");
         int c;
         do{
           c=scanner.next().charAt(0);

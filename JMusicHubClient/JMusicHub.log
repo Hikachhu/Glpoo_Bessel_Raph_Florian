@@ -1,6 +1,75 @@
-03-05-2021 15:40:33:436	 type: INFO  	                      main: line  24 -	 message: Initialisation des couleurs
-03-05-2021 15:40:33:665	 type: INFO  	                      main: line  41 -	 message: Debut du programme
-03-05-2021 15:40:33:683	 type: INFO  	 FactoryOfStockageVolatile: line  20 -	 message: Creation d'une liste de chanson
-03-05-2021 15:40:33:683	 type: INFO  	 FactoryOfStockageVolatile: line  23 -	 message: Creation d'une liste de LivreAudio
-03-05-2021 15:40:33:683	 type: INFO  	   FactoryOfStockageMaster: line  20 -	 message: Creation d'une liste d'album
-03-05-2021 15:40:33:691	 type: INFO  	   FactoryOfStockageMaster: line  23 -	 message: Creation d'une liste de Playlist
+03-05-2021 23:47:17:453	 type: INFO  	                      main: line  24 -	 message: Initialisation des couleurs
+03-05-2021 23:47:17:638	 type: INFO  	                      main: line  41 -	 message: Debut du programme
+03-05-2021 23:47:17:654	 type: INFO  	 FactoryOfStockageVolatile: line  20 -	 message: Creation d'une liste de chanson
+03-05-2021 23:47:17:654	 type: INFO  	 FactoryOfStockageVolatile: line  23 -	 message: Creation d'une liste de LivreAudio
+03-05-2021 23:47:17:656	 type: INFO  	   FactoryOfStockageMaster: line  20 -	 message: Creation d'une liste d'album
+03-05-2021 23:47:17:659	 type: INFO  	   FactoryOfStockageMaster: line  23 -	 message: Creation d'une liste de Playlist
+03-05-2021 23:47:19:192	 type: INFO  	                   Adapter: line  20 -	 message: Conversion de m parmis [C@4f933fd1
+03-05-2021 23:47:19:196	 type: INFO  	                   Adapter: line  23 -	 message: Conversion en 10
+03-05-2021 23:47:19:197	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:10
+03-05-2021 23:47:20:132	 type: INFO  	                FacadeMenu: line  65 -	 message: Liste chanson = 	Titre =Britney Spears - ...Baby One More Time (Official Video) | Duree =3m57s | ID= 1 | Artiste = Britney Spears | Contenu = Britney Spears - ...Baby One More Time (Official Video).wav | genre = Pop
+	Titre =CÈline Dion - Pour que tu m'aimes encore (Clip officiel) | Duree =4m10s | ID= 2 | Artiste = CÈline Dion | Contenu = CÈline Dion - Pour que tu m'aimes encore (Clip officiel).wav | genre = Classique
+	Titre =IAM - Je danse le Mia (Clip officiel) | Duree =4m1s | ID= 3 | Artiste = IAM | Contenu = IAM - Je danse le Mia (Clip officiel).wav | genre = Rap
+	Titre =Jean-Jacques Goldman - On ira (Clip officiel) | Duree =4m23s | ID= 4 | Artiste = Jean-Jacques Goldman | Contenu = Jean-Jacques Goldman - On ira (Clip officiel).wav | genre = Pop
+	Titre =Khaled - Aicha | Duree =4m22s | ID= 5 | Artiste = Khaled | Contenu = Khaled - Aicha.wav | genre = Pop
+	Titre =Ideal paradoxal | Duree =3m53s | ID= 6 | Artiste = INCONNU | Contenu = paradoxal.wav | genre = Pop
+	Titre =Patrick Bruel - Place des grands hommes (Audio) | Duree =4m29s | ID= 7 | Artiste = Patrick Bruel | Contenu = Patrick Bruel - Place des grands hommes (Audio).wav | genre = Classique
+	Titre =Shaggy - Boombastic (Official Music Video) | Duree =3m55s | ID= 8 | Artiste = Shaggy | Contenu = Shaggy - Boombastic (Official Music Video).wav | genre = Jazz
+	Titre =Spice Girls - Wannabe | Duree =3m56s | ID= 9 | Artiste = Spice Girls | Contenu = Spice Girls - Wannabe.wav | genre = Pop
+	Titre =Chacun sa Route (Clip Officiel) | Duree =2m44s | ID= 10 | Artiste = Tonton David, Geoffrey Oryema, Manu KatchÈ | Contenu = Tonton David _ Geoffrey Oryema _ Manu Katche (KOD) - Chacun sa Route (Clip Officiel).wav | genre = Jazz
+	Titre =Vanessa Paradis - Tandem | Duree =3m24s | ID= 11 | Artiste = Vanessa Paradis | Contenu = Vanessa Paradis - Tandem.wav | genre = Classique
+	Titre =Zebda - Tomber La Chemise | Duree =4m22s | ID= 12 | Artiste = Zebda | Contenu = Zebda - Tomber La Chemise.wav | genre = Jazz
+
+03-05-2021 23:47:20:275	 type: INFO  	                FacadeMenu: line  70 -	 message: Liste LivreAudio = Titre=Louise Attaque - J't'emmËne au vent (Clip Officiel remasterisÈ) Duree=3m4s ID=13 Auteur=Louise Attaque Contenu=Louise Attaque - J't'emmene au vent (Clip Officiel remasterise).wav langue=INCONNU categorie=INCONNU
+Titre=Lou Bega - Mambo No. 5 (A Little Bit of...) (Official Video) Duree=3m41s ID=14 Auteur=Lou Bega Contenu=Mambo No. 5 (A Little Bit of...) (Official Video).wav langue=INCONNU categorie=INCONNU
+Titre=Manau - La tribu de Dana (Clip Officiel remasterisÈ) Duree=3m46s ID=15 Auteur=Manau Contenu=Manau - La tribu de Dana (Clip Officiel remasterise).wav langue=INCONNU categorie=INCONNU
+Titre=Matmatah - LambÈ An Dro (clip officiel) Duree=3m40s ID=16 Auteur=Matmatah Contenu=Matmatah - Lambe An Dro (clip officiel).wav langue=INCONNU categorie=INCONNU
+
+03-05-2021 23:47:20:432	 type: INFO  	                FacadeMenu: line  75 -	 message: ListeAlbum = Numero :0 | Album: 123 ID: 0 Artiste: 123 DateSortie: 123 Duree: 2m3s
+
+Numero :1 | Album: Nouvel Album ID: 1 Artiste: Florian Morin DateSortie: 2000 Duree: 2m3s
+		Titre =IAM - Je danse le Mia (Clip officiel) | Duree =4m1s | ID= 2 | Artiste = IAM | Contenu = IAM - Je danse le Mia (Clip officiel).wav | genre = Rap
+
+Numero :2 | Album: Testfinal ID: 2 Artiste: Florian Morin DateSortie: 2020 Duree: 2m3s
+
+
+03-05-2021 23:47:20:566	 type: INFO  	                FacadeMenu: line  80 -	 message: ListePlaylist = Numero :0 | Nom: Playlist Raphael ID: 1
+
+Numero :1 | Nom: Test ID: 2
+
+Numero :2 | Nom: TestClient ID: 3
+		Titre =Zebda - Tomber La Chemise | Duree =4m22s | ID= 11 | Artiste = Zebda | Contenu = Zebda - Tomber La Chemise.wav | genre = Jazz
+		Titre =CÈline Dion - Pour que tu m'aimes encore (Clip officiel) | Duree =4m10s | ID= 1 | Artiste = CÈline Dion | Contenu = CÈline Dion - Pour que tu m'aimes encore (Clip officiel).wav | genre = Classique
+		Titre =Jean-Jacques Goldman - On ira (Clip officiel) | Duree =4m23s | ID= 3 | Artiste = Jean-Jacques Goldman | Contenu = Jean-Jacques Goldman - On ira (Clip officiel).wav | genre = Pop
+
+
+03-05-2021 23:47:21:719	 type: INFO  	                   Adapter: line  20 -	 message: Conversion de j parmis [C@131276c2
+03-05-2021 23:47:21:720	 type: INFO  	                   Adapter: line  23 -	 message: Conversion en 9
+03-05-2021 23:47:21:720	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:9
+03-05-2021 23:47:22:562	 type: INFO  	                   Adapter: line  20 -	 message: Conversion de c parmis [C@4e7dc304
+03-05-2021 23:47:22:563	 type: INFO  	                   Adapter: line  23 -	 message: Conversion en 1
+03-05-2021 23:47:22:563	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:1
+03-05-2021 23:47:23:661	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:3
+03-05-2021 23:47:26:243	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:1
+03-05-2021 23:47:26:360	 type: INFO  	                    Client: line  47 -	 message: Apres sock
+03-05-2021 23:47:26:361	 type: INFO  	                    Client: line  51 -	 message: File is C:\Users\Flor1\AppData\Local\Temp\Jean-Jacques Goldman - On ira (Clip officiel).wav
+03-05-2021 23:47:26:361	 type: INFO  	                    Client: line  55 -	 message: post creation is
+03-05-2021 23:47:26:368	 type: INFO  	                    Client: line  57 -	 message: post creation fos
+03-05-2021 23:47:26:368	 type: INFO  	                    Client: line  59 -	 message: post creation bos
+03-05-2021 23:47:26:695	 type: INFO  	                    Client: line  71 -	 message: File Jean-Jacques Goldman - On ira (Clip officiel).wav downloaded (50414270 bytes read)
+03-05-2021 23:47:26:696	 type: INFO  	                    Client: line  78 -	 message: close all
+03-05-2021 23:47:26:705	 type: INFO  	                 PlaySound: line  64 -	 message: Debut de la lecture de C:\Users\Flor1\AppData\Local\Temp\Jean-Jacques Goldman - On ira (Clip officiel).wav √† 2021-05-03T21:47:26.697644700Z
+03-05-2021 23:47:26:705	 type: INFO  	                 PlaySound: line  70 -	 message: Recup√©ration fichier : C:\Users\Flor1\AppData\Local\Temp\Jean-Jacques Goldman - On ira (Clip officiel).wav
+03-05-2021 23:47:26:719	 type: INFO  	                 PlaySound: line  79 -	 message: Ouverture audioStream de C:\Users\Flor1\AppData\Local\Temp\Jean-Jacques Goldman - On ira (Clip officiel).wav
+03-05-2021 23:47:26:843	 type: INFO  	                 PlaySound: line  92 -	 message: Ouverture de la sourceLine de C:\Users\Flor1\AppData\Local\Temp\Jean-Jacques Goldman - On ira (Clip officiel).wav
+03-05-2021 23:47:26:856	 type: INFO  	                 PlaySound: line 112 -	 message: frameSize=4 totalFrames=12603420 sampleRate=48000.0 totalSeconds= 262.57125
+03-05-2021 23:47:26:858	 type: INFO  	                 KeyThread: line  91 -	 message: Debut Thread
+03-05-2021 23:47:26:859	 type: INFO  	                 PlaySound: line 129 -	 message: Debut musique
+03-05-2021 23:47:26:859	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:1
+03-05-2021 23:47:26:859	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:-1
+03-05-2021 23:47:26:966	 type: INFO  	                 PlaySound: line 214 -	 message: 0% jou√© | avanc√©e actuelle = 0s
+03-05-2021 23:47:27:587	 type: INFO  	                 PlaySound: line 214 -	 message: 0% jou√© | avanc√©e actuelle = 1s
+03-05-2021 23:47:28:586	 type: INFO  	                 PlaySound: line 214 -	 message: 0% jou√© | avanc√©e actuelle = 2s
+03-05-2021 23:47:28:982	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:4
+03-05-2021 23:47:28:983	 type: INFO  	                MutableInt: line  34 -	 message: Changement de valeur √†:-2
+03-05-2021 23:47:28:984	 type: INFO  	                 KeyThread: line  79 -	 message: Sortie programme apres ecoute de musique

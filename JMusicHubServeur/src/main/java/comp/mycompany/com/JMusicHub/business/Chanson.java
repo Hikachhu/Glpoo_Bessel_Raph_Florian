@@ -47,14 +47,6 @@ public class Chanson extends Stockage implements Listing,Serializable{
   }
 
   /**
-   * Accesseur de Contenu
-   * @return String avec le contenu
-   */
-  public String getContenu(){
-    return this.Contenu;
-  }
-
-  /**
    * Accesseur du Genre
    * @return Renvoi le nom du Genre
    */

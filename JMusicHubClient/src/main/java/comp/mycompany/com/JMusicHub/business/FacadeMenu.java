@@ -261,7 +261,7 @@ public class FacadeMenu{
   public void ConfirmationChoixLecture(String tempDir,StockageMaster AConfirmer){
     StockageVolatile AjouterAlbum;
     int NumeroId;
-    NumeroId=clavier.nextInt();
+    NumeroId=clavier.nextInt()-1;
     /**
      * Demande et envoi du numero de la liste à jouer
      */
@@ -312,7 +312,7 @@ public class FacadeMenu{
    */
   public void ConfirmationChoixLecture(String tempDir,StockageVolatile ListeChanson){
     String Ajouer="";
-    int NumeroId=clavier.nextInt();
+    int NumeroId=clavier.nextInt()-1;
     /**
      * Demande et envoi du numero de la liste à jouer
      */

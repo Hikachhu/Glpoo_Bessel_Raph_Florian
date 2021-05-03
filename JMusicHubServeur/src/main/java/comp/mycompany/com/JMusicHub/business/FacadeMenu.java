@@ -330,7 +330,7 @@ public class FacadeMenu{
 
         if(ChoixClient.getValue()==1){
           System.out.println("Lecture de "+AjouerPlaylist);
-          Player.LecturePlaylist(AjouerPlaylist);
+          if(AjouerPlaylist!=null)Player.LecturePlaylist(AjouerPlaylist);
 
         }else{
           System.out.println("Anulation lectue de "+AjouerPlaylist);

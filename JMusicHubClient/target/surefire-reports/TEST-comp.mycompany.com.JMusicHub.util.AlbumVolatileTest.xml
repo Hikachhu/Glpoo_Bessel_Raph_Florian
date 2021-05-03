@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.031" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.008" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient\target\test-classes;C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient\target\classes;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Flor1\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15.jar;C:\Users\Flor1\.m2\repository\me\tongfei\progressbar\0.9.1\progressbar-0.9.1.jar;C:\Users\Flor1\.m2\repository\org\jline\jline\3.19.0\jline-3.19.0.jar;C:\Users\Flor1\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient\target\test-classes;C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient\target\classes;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Flor1\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15.jar;C:\Users\Flor1\.m2\repository\me\tongfei\progressbar\0.9.1\progressbar-0.9.1.jar;C:\Users\Flor1\.m2\repository\org\jline\jline\3.19.0\jline-3.19.0.jar;C:\Users\Flor1\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Flor1\AppData\Local\Temp\surefire5072482039444294007\surefirebooter2785025906265087303.jar C:\Users\Flor1\AppData\Local\Temp\surefire5072482039444294007 2021-05-03T15-37-43_477-jvmRun1 surefire7918519392815843527tmp surefire_012069024214790631141tmp"/>
+    <property name="sun.java.command" value="C:\Users\Flor1\AppData\Local\Temp\surefire15081965379395392336\surefirebooter8919304783738011313.jar C:\Users\Flor1\AppData\Local\Temp\surefire15081965379395392336 2021-05-03T23-46-48_637-jvmRun1 surefire7838593073073270171tmp surefire_0869386109437771221tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient\target\test-classes;C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient\target\classes;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Flor1\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15.jar;C:\Users\Flor1\.m2\repository\me\tongfei\progressbar\0.9.1\progressbar-0.9.1.jar;C:\Users\Flor1\.m2\repository\org\jline\jline\3.19.0\jline-3.19.0.jar;C:\Users\Flor1\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient\target\test-classes;C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient\target\classes;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Flor1\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\Flor1\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-graphics\15\javafx-graphics-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-base\15\javafx-base-15-win.jar;C:\Users\Flor1\.m2\repository\org\openjfx\javafx-media\15\javafx-media-15.jar;C:\Users\Flor1\.m2\repository\me\tongfei\progressbar\0.9.1\progressbar-0.9.1.jar;C:\Users\Flor1\.m2\repository\org\jline\jline\3.19.0\jline-3.19.0.jar;C:\Users\Flor1\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\Flor1\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Flor1"/>
     <property name="user.language" value="fr"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2020-10-20"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient"/>
+    <property name="basedir" value="C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Flor1\AppData\Local\Temp\surefire5072482039444294007\surefirebooter2785025906265087303.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Flor1\AppData\Local\Temp\surefire15081965379395392336\surefirebooter8919304783738011313.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Flor1\AppData\Local\Temp\"/>
     <property name="java.version" value="15.0.1"/>
-    <property name="user.dir" value="C:\Users\Flor1\OneDrive\Documents\3A\S2\ProjetMusicub\JMusicHubClient"/>
+    <property name="user.dir" value="C:\Users\Flor1\Downloads\GLPOO_Kobeissi_Morin_PtitHaddad\JMusicHubClient"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -55,11 +55,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="TestEnsemble" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.005"/>
-  <testcase name="TestAdd2" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.008"/>
-  <testcase name="TestTri1" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.006"/>
+  <testcase name="TestEnsemble" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
+  <testcase name="TestAdd2" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
+  <testcase name="TestTri1" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
   <testcase name="TestTri2" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
   <testcase name="Test1" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
-  <testcase name="Test2" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0.001"/>
+  <testcase name="Test2" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
   <testcase name="Testget" classname="comp.mycompany.com.JMusicHub.util.AlbumVolatileTest" time="0"/>
 </testsuite>
