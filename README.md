@@ -37,3 +37,4 @@ Vous pouvez commencer par synchronisez vos données avec le serveur afin de réc
 Pour cela faite j afin d'ouvrir le menu de lecture audio, puis le type de fichier que vous souhaitez lire, son numéro et enfin valider votre choix.
 Ainsi vous pourrez écouter un fichier audio depuis le client.
 
+[![Java 101 Card](https://github-readme-stats.vercel.app/api/pin/?username=Hikachhu&repo=Glpoo_Bessel_Raph_Florian&theme=highcontrast)](https://github.com/Hikachhu/Glpoo_Bessel_Raph_Florian)
