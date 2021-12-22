@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"comp.mycompany.com.JMusicHub.business"},{"l":"comp.mycompany.com.JMusicHub.main"},{"l":"comp.mycompany.com.JMusicHub.util"}];updateSearchResults();
